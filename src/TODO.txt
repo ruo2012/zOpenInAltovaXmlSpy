@@ -1,0 +1,7 @@
+﻿migrate from BB to github
+very final updates to ReadMe.md & changelog.md
+PUBLISH
+
+delete TODO.txt
+
+make as generic as possible
