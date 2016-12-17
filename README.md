@@ -1,13 +1,13 @@
 # Open In Altova XmlSpy
 
 [![Licence](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
-[![Build status](https://ci.appveyor.com/api/projects/status/tcugu9rs3ihbgl7o?svg=true)](https://ci.appveyor.com/project/GregTrevellick/autofindreplace)
-![](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.AutoFindReplace.svg)
-<!--![](https://vsmarketplacebadge.apphb.com/installs/GregTrevellick.AutoFindReplace.svg)-->
-<!--![](https://vsmarketplacebadge.apphb.com/rating/GregTrevellick.AutoFindReplace.svg)-->
-[![Source Browser](https://img.shields.io/badge/Browse-Source-green.svg)](http://sourcebrowser.io/Browse/GregTrevellick/AutoFindReplace)
+[![Build status](https://ci.appveyor.com/api/projects/status/tcugu9rs3ihbgl7o?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
+![](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInAltovaXmlSpy.svg)
+<!--![](https://vsmarketplacebadge.apphb.com/installs/GregTrevellick.OpenInAltovaXmlSpy.svg)-->
+<!--![](https://vsmarketplacebadge.apphb.com/rating/GregTrevellick.OpenInAltovaXmlSpy.svg)-->
+[![Source Browser](https://img.shields.io/badge/Browse-Source-green.svg)](http://sourcebrowser.io/Browse/GregTrevellick/OpenInAltovaXmlSpy)
 
-Download this extension from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.AutoFindReplace).
+Download this extension from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy).
 
 ---------------------------------------
 
@@ -19,9 +19,9 @@ Open a file in [Altova XMLSpy XML Editor](http://www.altova.com/xml-editor/) dir
 
 <!--<img src="http://www.altova.com/images/linktoaltova/xmlspy.png" height="56" width="170" alt="XMLSpy XML Editor" border="0"/>-->
 
-If you like this *free* extension, please give it a [review](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.AutoFindReplace#review-details).
+If you like this *free* extension, please give it a [review](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy#review-details).
 
-See the [change log](CHANGELOG.md) for road map and release history. Bugs can be logged [here](https://github.com/GregTrevellick/AutoFindReplace/issues).
+See the [change log](CHANGELOG.md) for road map and release history. Bugs can be logged [here](https://github.com/GregTrevellick/OpenInAltovaXmlSpy/issues).
 
 ![](/openinxmlspy/src/Resources/OpenInXmlSpy_ContextMenu.png)
 
@@ -37,7 +37,7 @@ See the [change log](CHANGELOG.md) for road map and release history. Bugs can be
 
 ## Contribute
 
-Contributions to this project are welcome by raising an [Issue](https://github.com/GregTrevellick/AutoFindReplace/issues) or submitting a [Pull Request](https://github.com/GregTrevellick/AutoFindReplace/pulls).
+Contributions to this project are welcome by raising an [Issue](https://github.com/GregTrevellick/OpenInAltovaXmlSpy/issues) or submitting a [Pull Request](https://github.com/GregTrevellick/OpenInAltovaXmlSpy/pulls).
 
 ## License
 
@@ -45,9 +45,9 @@ Contributions to this project are welcome by raising an [Issue](https://github.c
 
 ## Legal
 
-The [owner](https://github.com/GregTrevellick) of this [GitHub repository / software](https://github.com/GregTrevellick/AutoFindReplace) is not affiliated, associated, authorized, endorsed by, employed by, sponsored by, or in any way officially connected with [Altova](https://www.altova.com) or any of its subsidiaries or its affiliates.
+The [owner](https://github.com/GregTrevellick) of this [GitHub repository / software](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) is not affiliated, associated, authorized, endorsed by, employed by, sponsored by, or in any way officially connected with [Altova](https://www.altova.com) or any of its subsidiaries or its affiliates.
 
-Nor has [this](https://github.com/GregTrevellick/AutoFindReplace) software been authorised, approved, verified or in anyway assessed by [Altova](https://www.altova.com/company.html), or any of its subsidiaries or its affiliates, either as [raw source code](https://github.com/GregTrevellick/AutoFindReplace) on [GitHub.com](https://github.com/) or as a [Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/02a85115-e23c-4e73-af09-957741c4f57d?redir=0) in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
+Nor has [this](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) software been authorised, approved, verified or in anyway assessed by [Altova](https://www.altova.com/company.html), or any of its subsidiaries or its affiliates, either as [raw source code](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) on [GitHub.com](https://github.com/) or as a [Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/02a85115-e23c-4e73-af09-957741c4f57d?redir=0) in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
 
 All Trademark, intellectual property rights, and other rights belonging to [Altova](https://www.altova.com) as described in [here](https://www.altova.com/legal.html) and [here](https://www.altova.com/eula.html) apply.
 

@@ -9,7 +9,7 @@ namespace OpenInXxx.Tools
         public const string CategoryTopLevel = "Open in Altova XmlSpy";
         public const string Xxx = "XmlSpy";
         public const string XxxFolderName = "XMLSpy";
-        public const string XxxGitHubRepoName = "AutoFindReplace";//TODOgregt chg to open in xml spy
+        public const string XxxGitHubRepoName = "OpenInAltovaXmlSpy";
         public const string XxxParentFolderName = "Altova";
         public const string XxxTypicalFileContentDescriptor = "XML";
         public static IEnumerable<string> GetDefaultTypicalFileExtensions()
