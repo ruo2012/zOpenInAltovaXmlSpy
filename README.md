@@ -13,7 +13,7 @@ Download this extension from the [VS Marketplace](https://marketplace.visualstud
 
 <!--COPY START FOR VS GALLERY-->
 
-Open a file in [Altova XMLSpy XML Editor](http://www.altova.com/xml-editor/) directly from Visual Studio
+A Visual Studio extension to open a file in [Altova XMLSpy XML Editor](http://www.altova.com/xml-editor/) directly from Visual Studio
 
 [![](http://www.altova.com/images/linktoaltova/xmlspy.png)](http://www.altova.com/xml-editor/)
 
