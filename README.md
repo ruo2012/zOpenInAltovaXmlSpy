@@ -23,7 +23,7 @@ If you like this *free* extension, please give it a [review](https://marketplace
 
 See the [change log](CHANGELOG.md) for road map and release history. Bugs can be logged [here](https://github.com/GregTrevellick/OpenInAltovaXmlSpy/issues).
 
-![](/openinxmlspy/src/Resources/OpenInXmlSpy_ContextMenu.png)
+![](/src/Resources/OpenInXmlSpy_ContextMenu.png)
 
 ## Features
 
@@ -31,7 +31,7 @@ See the [change log](CHANGELOG.md) for road map and release history. Bugs can be
 - Warning (not prevention) if attemptimg to open a large quantity of files (configurable limit, which defaults to 10)
 - Warning (not prevention) if attempting to open one or more files that typically aren't XML format (configurable list of file extensions that typically constitute XML files, which defaults to a wide range of xml file extensions)
 
-![](/openinxmlspy/src/Resources/OpenInXmlSpy_GeneralOptions.png)
+![](/src/Resources/OpenInXmlSpy_GeneralOptions.png)
 
 <!--COPY END FOR VS GALLERY-->
 
