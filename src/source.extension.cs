@@ -9,10 +9,10 @@ namespace OpenInXxx
     {
         public const string Id = "AE643C9F-EA6E-4A88-A122-34696D103F82";
         public const string Name = "Open in Altova XMLSpy";
-        public const string Description = @"Open a file in Altova XMLSpy directly from Solution Explorer within Visual Studio.";
+        public const string Description = @"Open a file in Altova XMLSpy XML editor directly from Solution Explorer within Visual Studio.";
         public const string Language = "en-US";
         public const string Version = "1.0.0";
         public const string Author = "Greg Trevellick";
-        public const string Tags = "xml, xmlspy, altova, xsd, xslt";
+        public const string Tags = "xml, xmlspy, altova, xsd, xslt, open in,";
     }
 }
