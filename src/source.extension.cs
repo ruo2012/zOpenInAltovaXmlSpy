@@ -12,7 +12,7 @@ namespace OpenInXxx
         public const string Description = @"Open a file in Altova XMLSpy XML editor directly from Solution Explorer within Visual Studio.";
         public const string Language = "en-US";
         public const string Version = "1.0.0";
-        public const string Author = "Greg Trevellick";
-        public const string Tags = "xml, xmlspy, altova, xsd, xslt, open in,";
+        public const string Author = "GregTrevellick";
+        public const string Tags = "xml, xmlspy, altova, xsd, xslt, open in";
     }
 }
