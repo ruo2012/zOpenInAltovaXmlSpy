@@ -1,6 +1,6 @@
 # Open In Altova XmlSpy
 
-[![Licence](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
+[![Licence](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE)
 [![Build status](https://ci.appveyor.com/api/projects/status/tcugu9rs3ihbgl7o?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
 ![](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInAltovaXmlSpy.svg)
 <!--![](https://vsmarketplacebadge.apphb.com/installs/GregTrevellick.OpenInAltovaXmlSpy.svg)-->
@@ -13,7 +13,7 @@ Download this extension from the [VS Marketplace](https://marketplace.visualstud
 
 <!--COPY START FOR VS GALLERY-->
 
-Open a file in [Altova XMLSpy XML Editor](http://www.altova.com/xml-editor/) directly from Visual Studio
+A Visual Studio extension to open a file in [Altova XMLSpy XML Editor](http://www.altova.com/xml-editor/) directly from Visual Studio
 
 [![](http://www.altova.com/images/linktoaltova/xmlspy.png)](http://www.altova.com/xml-editor/)
 
@@ -23,7 +23,7 @@ If you like this *free* extension, please give it a [review](https://marketplace
 
 See the [change log](CHANGELOG.md) for road map and release history. Bugs can be logged [here](https://github.com/GregTrevellick/OpenInAltovaXmlSpy/issues).
 
-![](/openinxmlspy/src/Resources/OpenInXmlSpy_ContextMenu.png)
+![](/src/Resources/OpenInXmlSpy_ContextMenu.png)
 
 ## Features
 
@@ -31,7 +31,7 @@ See the [change log](CHANGELOG.md) for road map and release history. Bugs can be
 - Warning (not prevention) if attemptimg to open a large quantity of files (configurable limit, which defaults to 10)
 - Warning (not prevention) if attempting to open one or more files that typically aren't XML format (configurable list of file extensions that typically constitute XML files, which defaults to a wide range of xml file extensions)
 
-![](/openinxmlspy/src/Resources/OpenInXmlSpy_GeneralOptions.png)
+![](/src/Resources/OpenInXmlSpy_GeneralOptions.png)
 
 <!--COPY END FOR VS GALLERY-->
 
@@ -41,7 +41,7 @@ Contributions to this project are welcome by raising an [Issue](https://github.c
 
 ## License
 
-[MIT](/LICENSE.txt)
+[MIT](/LICENSE)
 
 ## Legal
 
