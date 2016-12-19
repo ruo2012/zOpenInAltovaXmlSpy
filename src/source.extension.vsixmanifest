@@ -7,8 +7,8 @@
     <MoreInfo>https://github.com/GregTrevellick/OpenInAltovaXmlSpy</MoreInfo>
     <License>LICENSE</License>
     <ReleaseNotes>https://github.com/GregTrevellick/OpenInAltovaXmlSpy/blob/master/CHANGELOG.md</ReleaseNotes>
-    <Icon>ExtensionIcon_32x32.png</Icon>
-    <PreviewImage>ExtensionPreview_175x175.png</PreviewImage>
+    <Icon>Resources\ExtensionIcon_90x90.png</Icon>
+    <PreviewImage>Resources\ExtensionPreview_175x175.png</PreviewImage>
     <Tags>xml, xmlspy, altova, xsd, xslt, open in</Tags>
   </Metadata>
   <Installation>

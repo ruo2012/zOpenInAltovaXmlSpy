@@ -124,7 +124,7 @@
     <value>Open a file in Altova XMLSpy XML editor directly from Solution Explorer within Visual Studio.</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ExtensionIcon_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\extensionicon_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>source.extension.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

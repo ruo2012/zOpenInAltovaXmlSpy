@@ -57,6 +57,9 @@
     <Compile Include="Commands\OpenInXxx.cs" />
     <Compile Include="Helpers\FileBrowseOutcomeDto.cs" />
     <Compile Include="Helpers\OptionsHelper.cs" />
+    <Compile Include="source.extension.Designer.cs">
+      <DependentUpon>source.extension.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tools\MagicStrings.cs" />
     <Compile Include="Helpers\Logger.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
@@ -204,7 +207,11 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\ExtensionIcon_32x32.png">
+    <Content Include="Resources\ExtensionIcon_90x90.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Resources\zExtensionIcon_32x32.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
