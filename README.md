@@ -19,7 +19,7 @@ If you like this *free* extension, please give it a [review](https://marketplace
 
 See the [change log](CHANGELOG.md) for road map and release history. Bugs can be logged [here](https://github.com/GregTrevellick/OpenInAltovaXmlSpy/issues).
 
-![](/src/Resources/OpenInXmlSpy_ContextMenu.png)
+![](/OpenInXxx/Resources/OpenInXmlSpy_ContextMenu.png)
 
 ## Features
 
@@ -27,7 +27,7 @@ See the [change log](CHANGELOG.md) for road map and release history. Bugs can be
 - Warning (not prevention) if attemptimg to open a large quantity of files (configurable limit, which defaults to 10)
 - Warning (not prevention) if attempting to open one or more files that typically aren't XML format (configurable list of file extensions that typically constitute XML files, which defaults to a wide range of xml file extensions)
 
-![](/src/Resources/OpenInXmlSpy_GeneralOptions.png)
+![](/OpenInXxx/Resources/OpenInXmlSpy_GeneralOptions.png)
 
 <!--COPY END FOR VS GALLERY-->
 
@@ -48,6 +48,8 @@ Nor has [this](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) software be
 All Trademark, intellectual property rights, and other rights belonging to [Altova](https://www.altova.com) as described in [here](https://www.altova.com/legal.html) and [here](https://www.altova.com/eula.html) apply.
 
 All Altova logos and Altova links belong to [Altova](https://www.altova.com) and their use here and any associated goodwill inures to [Altova](https://www.altova.com) as described [here](https://www.altova.com/link-to-altova.html).
+
+In no event shall [Altova GMBH](https://www.altova.com) be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or dealings in the software.
 
 ## Credits
 
