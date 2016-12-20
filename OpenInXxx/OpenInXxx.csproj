@@ -198,9 +198,6 @@
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\LICENSE.txt">
-      <Link>LICENSE.txt</Link>
-    </Content>
     <Content Include="Resources\CommandIcon_16x16.png">
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

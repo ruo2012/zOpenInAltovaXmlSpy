@@ -64,7 +64,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\OpenInXxx.csproj">
+    <ProjectReference Include="..\OpenInXxx\OpenInXxx.csproj">
       <Project>{0DD8CCEA-DC16-4065-B148-E388F9FD30D3}</Project>
       <Name>OpenInXxx</Name>
     </ProjectReference>
