@@ -3,7 +3,7 @@
 [![Licence](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE)
 [![Build status](https://ci.appveyor.com/api/projects/status/33e93co68kooud5r?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
 <!--![](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInAltovaXmlSpy.svg)-->
-[![Source Browser](https://img.shields.io/badge/Browse-Source-green.svg)](http://sourcebrowser.io/Browse/GregTrevellick/OpenInAltovaXmlSpy)
+<!--[![Source Browser](https://img.shields.io/badge/Browse-Source-green.svg)](http://sourcebrowser.io/Browse/GregTrevellick/OpenInAltovaXmlSpy)-->
 
 Download this extension from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy).
 
@@ -19,13 +19,17 @@ If you like this *free* extension, please give it a [review](https://marketplace
 
 See the [change log](CHANGELOG.md) for road map and release history. Bugs can be logged [here](https://github.com/GregTrevellick/OpenInAltovaXmlSpy/issues).
 
-![](/OpenInXxx/Resources/OpenInXmlSpy_ContextMenu.png)
-
 ## Features
 
-- Open multiple files with XML Spy directly from within Solution Explorer
-- Warning (not prevention) if attemptimg to open a large quantity of files (configurable limit, which defaults to 10)
-- Warning (not prevention) if attempting to open one or more files that typically aren't XML format (configurable list of file extensions that typically constitute XML files, which defaults to a wide range of xml file extensions)
+![](/OpenInXxx/Resources/OpenInXmlSpy_ContextMenu.png)
+
+- Open multiple files simultaneously with XML Spy directly from within Solution Explorer.
+
+- Warning if attemptimg to open a large quantity of files. The quantity is configurable, and if set very high effectively suppresses the warning altogether.
+
+- Warning if attempting to open one or more files which typically do not contain XML formated content. The list of file extensions that typically constitute XML files is configurable in Tools | Options, and the warning message can be suppressed.
+
+## Options
 
 ![](/OpenInXxx/Resources/OpenInXmlSpy_GeneralOptions.png)
 
