@@ -2,7 +2,7 @@
 
 [![Licence](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE)
 [![Build status](https://ci.appveyor.com/api/projects/status/33e93co68kooud5r?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
-![](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInAltovaXmlSpy.svg)
+<!--![](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInAltovaXmlSpy.svg)-->
 [![Source Browser](https://img.shields.io/badge/Browse-Source-green.svg)](http://sourcebrowser.io/Browse/GregTrevellick/OpenInAltovaXmlSpy)
 
 Download this extension from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy).
@@ -43,7 +43,7 @@ Contributions to this project are welcome by raising an [Issue](https://github.c
 
 The [owner](https://github.com/GregTrevellick) of this [GitHub repository / software](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) is not affiliated, associated, authorized, endorsed by, employed by, sponsored by, or in any way officially connected with [Altova](https://www.altova.com) or any of its subsidiaries or its affiliates.
 
-Nor has [this](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) software been authorised, approved, verified or in anyway assessed by [Altova](https://www.altova.com/company.html), or any of its subsidiaries or its affiliates, either as [raw source code](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) on [GitHub.com](https://github.com/) or as a [Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/02a85115-e23c-4e73-af09-957741c4f57d?redir=0) in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
+Nor has [this](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) software been authorised, approved, verified or in anyway assessed by [Altova](https://www.altova.com/company.html), or any of its subsidiaries or its affiliates, either as [raw source code](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) on [GitHub.com](https://github.com/) or as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy) in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
 
 All Trademark, intellectual property rights, and other rights belonging to [Altova](https://www.altova.com) as described in [here](https://www.altova.com/legal.html) and [here](https://www.altova.com/eula.html) apply.
 
