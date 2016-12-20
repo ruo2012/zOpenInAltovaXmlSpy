@@ -1,10 +1,8 @@
 # Open In Altova XmlSpy
 
 [![Licence](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE)
-[![Build status](https://ci.appveyor.com/api/projects/status/tcugu9rs3ihbgl7o?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
+[![Build status](https://ci.appveyor.com/api/projects/status/33e93co68kooud5r?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
 ![](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInAltovaXmlSpy.svg)
-<!--![](https://vsmarketplacebadge.apphb.com/installs/GregTrevellick.OpenInAltovaXmlSpy.svg)-->
-<!--![](https://vsmarketplacebadge.apphb.com/rating/GregTrevellick.OpenInAltovaXmlSpy.svg)-->
 [![Source Browser](https://img.shields.io/badge/Browse-Source-green.svg)](http://sourcebrowser.io/Browse/GregTrevellick/OpenInAltovaXmlSpy)
 
 Download this extension from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy).
@@ -15,9 +13,7 @@ Download this extension from the [VS Marketplace](https://marketplace.visualstud
 
 A Visual Studio extension to open a file in [Altova XMLSpy XML Editor](http://www.altova.com/xml-editor/) directly from Visual Studio
 
-[![](http://www.altova.com/images/linktoaltova/xmlspy.png)](http://www.altova.com/xml-editor/)
-
-<!--<img src="http://www.altova.com/images/linktoaltova/xmlspy.png" height="56" width="170" alt="XMLSpy XML Editor" border="0"/>-->
+[![XMLSpy XML Editor](http://www.altova.com/images/linktoaltova/xmlspy.png)](http://www.altova.com/xml-editor/)
 
 If you like this *free* extension, please give it a [review](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy#review-details).
 
