@@ -41,7 +41,7 @@ Contributions to this project are welcome by raising an [Issue](https://github.c
 
 ## License
 
-[MIT](/LICENSE)
+[MIT](/LICENSE.txt)
 
 ## Legal
 
