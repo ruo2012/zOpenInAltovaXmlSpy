@@ -1,6 +1,6 @@
 # Open In Altova XmlSpy
 
-[![Licence](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE)
+[![Licence](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
 [![Build status](https://ci.appveyor.com/api/projects/status/33e93co68kooud5r?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
 <!--![](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInAltovaXmlSpy.svg)-->
 <!--[![Source Browser](https://img.shields.io/badge/Browse-Source-green.svg)](http://sourcebrowser.io/Browse/GregTrevellick/OpenInAltovaXmlSpy)-->
