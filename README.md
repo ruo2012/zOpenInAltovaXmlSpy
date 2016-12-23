@@ -21,7 +21,7 @@ See the [change log](CHANGELOG.md) for road map and release history. Bugs can be
 
 ## Features
 
-![](/OpenInXxx/Resources/OpenInXmlSpy_ContextMenu.png)
+![](OpenInXxx/Resources/OpenInXmlSpy_ContextMenu.png)
 
 - Open multiple files simultaneously with XML Spy directly from within Solution Explorer.
 
@@ -31,7 +31,7 @@ See the [change log](CHANGELOG.md) for road map and release history. Bugs can be
 
 ## Options
 
-![](/OpenInXxx/Resources/OpenInXmlSpy_GeneralOptions.png)
+![](OpenInXxx/Resources/OpenInXmlSpy_GeneralOptions.png)
 
 <!--COPY END FOR VS GALLERY-->
 
