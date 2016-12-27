@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OpenInXxx.Tools
+namespace OpenInXxx.Helpers
 {
-    public static class MagicStrings
+    public static class Constants
     {
         //SPECIFIC
         public const string CategoryTopLevel = "Open in Altova XmlSpy";

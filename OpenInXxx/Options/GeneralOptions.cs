@@ -5,28 +5,28 @@ using System.ComponentModel;
 using System.IO;
 using System.Windows.Forms;
 
-namespace OpenInXxx.Tools
+namespace OpenInXxx.Options
 {
-    public class Options : DialogPage
+    public class GeneralOptions : DialogPage
     {
-        [Category(MagicStrings.CategorySubLevel)]
-        [DisplayName(MagicStrings.ActualPathToExeOptionLabel)]
-        [Description(MagicStrings.ActualPathToExeOptionDetailedDescription)]
+        [Category(Constants.CategorySubLevel)]
+        [DisplayName(Constants.ActualPathToExeOptionLabel)]
+        [Description(Constants.ActualPathToExeOptionDetailedDescription)]
         public string ActualPathToExe { get; set; } 
 
-        [Category(MagicStrings.CategorySubLevel)]
-        [DisplayName(MagicStrings.TypicalFileExtensionsOptionLabel)]
-        [Description(MagicStrings.TypicalFileExtensionsOptionDetailedDescription)]
+        [Category(Constants.CategorySubLevel)]
+        [DisplayName(Constants.TypicalFileExtensionsOptionLabel)]
+        [Description(Constants.TypicalFileExtensionsOptionDetailedDescription)]
         public string TypicalFileExtensions { get; set; } = GetTypicalFileExtensions();
 
-        [Category(MagicStrings.CategorySubLevel)]
-        [DisplayName(MagicStrings.SuppressTypicalFileExtensionsWarningOptionLabel)]
-        [Description(MagicStrings.SuppressTypicalFileExtensionsWarningDetailedDescription)]
+        [Category(Constants.CategorySubLevel)]
+        [DisplayName(Constants.SuppressTypicalFileExtensionsWarningOptionLabel)]
+        [Description(Constants.SuppressTypicalFileExtensionsWarningDetailedDescription)]
         public bool SuppressTypicalFileExtensionsWarning { get; set; } = false;
 
-        [Category(MagicStrings.CategorySubLevel)]
-        [DisplayName(MagicStrings.FileQuantityWarningLimitOptionLabel)]
-        [Description(MagicStrings.FileQuantityWarningLimitOptionDetailedDescription)]
+        [Category(Constants.CategorySubLevel)]
+        [DisplayName(Constants.FileQuantityWarningLimitOptionLabel)]
+        [Description(Constants.FileQuantityWarningLimitOptionDetailedDescription)]
         public string FileQuantityWarningLimit
         {
             get
@@ -47,7 +47,7 @@ namespace OpenInXxx.Tools
                 if (!isInteger)
                 {
                     MessageBox.Show(
-                        MagicStrings.FileQuantityWarningLimitInvalid,
+                        Constants.FileQuantityWarningLimitInvalid,
                         Vsix.Name,
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
@@ -97,7 +97,7 @@ namespace OpenInXxx.Tools
 
         private static string GetTypicalFileExtensions()
         {
-            return FileHelper.GetDefaultTypicalFileExtensionsAsCsv(MagicStrings.GetDefaultTypicalFileExtensions());
+            return FileHelper.GetDefaultTypicalFileExtensionsAsCsv(Constants.GetDefaultTypicalFileExtensions());
         }
 
         private string previousActualPathToExe { get; set; }
@@ -109,13 +109,13 @@ namespace OpenInXxx.Tools
 
             foreach (DirectoryInfo programFilesFolder in programFilesFolders)
             {
-                var xxxParentFolderPaths = programFilesFolder.GetDirectories(MagicStrings.XxxParentFolderName);
+                var xxxParentFolderPaths = programFilesFolder.GetDirectories(Constants.XxxParentFolderName);
                 foreach (DirectoryInfo xxxParentFolderPath in xxxParentFolderPaths)
                 {
-                    var xxxFolderPaths = xxxParentFolderPath.GetDirectories(MagicStrings.XxxFolderName + "*");
+                    var xxxFolderPaths = xxxParentFolderPath.GetDirectories(Constants.XxxFolderName + "*");
                     foreach (DirectoryInfo xxxFolderPath in xxxFolderPaths)
                     {
-                        var path = Path.Combine(xxxFolderPath.FullName, MagicStrings.ExeFileToBrowseFor);
+                        var path = Path.Combine(xxxFolderPath.FullName, Constants.ExeFileToBrowseFor);
                         if (File.Exists(path))
                         {
                             return path;

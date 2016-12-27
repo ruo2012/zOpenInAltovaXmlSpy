@@ -2,7 +2,6 @@
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
 using OpenInXxx.Helpers;
-using OpenInXxx.Tools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -31,7 +30,7 @@ namespace OpenInXxx
         {
             if (package == null)
             {
-                Logger.Log(new ArgumentNullException("package"));
+                LogHelper.Log(new ArgumentNullException("package"));
                 ShowUnexpectedError();
             }
             else
@@ -87,7 +86,7 @@ namespace OpenInXxx
                         proceedToExecute = false;
                         if (actualFilesToBeOpened.Count() > fileQuantityWarningLimitInt)
                         {
-                            proceedToExecute = ConfirmProceedToExecute(MagicStrings.ConfirmOpenFileQuantityExceedsWarningLimit);
+                            proceedToExecute = ConfirmProceedToExecute(Helpers.Constants.ConfirmOpenFileQuantityExceedsWarningLimit);
                         }
                         else
                         {
@@ -105,7 +104,7 @@ namespace OpenInXxx
                                 }
                                 else
                                 {
-                                    proceedToExecute = ConfirmProceedToExecute(MagicStrings.ConfirmOpenNonTypicalFile);
+                                    proceedToExecute = ConfirmProceedToExecute(Helpers.Constants.ConfirmOpenNonTypicalFile);
                                 }
                             }
                             if (proceedToExecute)
@@ -118,7 +117,7 @@ namespace OpenInXxx
             }
             catch (Exception ex)
             {
-                Logger.Log(ex);
+                LogHelper.Log(ex);
                 ShowUnexpectedError();
             }
         }
@@ -156,7 +155,7 @@ namespace OpenInXxx
         {
             bool proceedToExecute = false;
 
-            messageText += Environment.NewLine + Environment.NewLine + MagicStrings.ContinueAnyway;
+            messageText += Environment.NewLine + Environment.NewLine + Helpers.Constants.ContinueAnyway;
 
             var box = MessageBox.Show(
                 messageText,
@@ -175,7 +174,7 @@ namespace OpenInXxx
         private static void InformUserMissingFile(string missingFileName)
         {
             MessageBox.Show(
-                MagicStrings.InformUserMissingFile(missingFileName),
+                Helpers.Constants.InformUserMissingFile(missingFileName),
                 Vsix.Name,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Stop);
@@ -184,7 +183,7 @@ namespace OpenInXxx
         private static void ShowUnexpectedError()
         {
             MessageBox.Show(
-                MagicStrings.UnexpectedError,
+                Helpers.Constants.UnexpectedError,
                 Vsix.Name,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error);

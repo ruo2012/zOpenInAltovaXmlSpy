@@ -1,6 +1,6 @@
 ﻿using EnvDTE;
 using EnvDTE80;
-using OpenInXxx.Tools;
+using OpenInXxx.Dtos;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -106,7 +106,7 @@ namespace OpenInXxx.Helpers
         public static void PromptForActualExeFile(string originalPathToFile)
         {
             var box = MessageBox.Show(
-               MagicStrings.PromptForActualExeFile(originalPathToFile),
+               Helpers.Constants.PromptForActualExeFile(originalPathToFile),
                Vsix.Name,
                MessageBoxButtons.YesNo,
                MessageBoxIcon.Question);
@@ -133,7 +133,7 @@ namespace OpenInXxx.Helpers
             var dialog = new OpenFileDialog
             {
                 DefaultExt = ".exe",
-                FileName = MagicStrings.ExeFileToBrowseFor,
+                FileName = Helpers.Constants.ExeFileToBrowseFor,
                 InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
                 CheckFileExists = true
             };

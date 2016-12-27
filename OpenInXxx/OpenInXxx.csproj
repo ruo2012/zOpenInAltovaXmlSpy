@@ -55,15 +55,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Commands\OpenInXxx.cs" />
-    <Compile Include="Helpers\FileBrowseOutcomeDto.cs" />
+    <Compile Include="Dtos\FileBrowseOutcomeDto.cs" />
     <Compile Include="Helpers\OptionsHelper.cs" />
     <Compile Include="source.extension.Designer.cs">
       <DependentUpon>source.extension.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tools\MagicStrings.cs" />
-    <Compile Include="Helpers\Logger.cs" />
+    <Compile Include="Helpers\Constants.cs" />
+    <Compile Include="Helpers\LogHelper.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
-    <Compile Include="Tools\Options.cs">
+    <Compile Include="Options\GeneralOptions.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="source.extension.cs">

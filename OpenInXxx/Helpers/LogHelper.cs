@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace OpenInXxx.Helpers
 {
-    public static class Logger
+    public static class LogHelper
     {
         private static IVsOutputWindowPane pane;
         private static object _syncRoot = new object();
