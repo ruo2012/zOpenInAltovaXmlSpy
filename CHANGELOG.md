@@ -18,7 +18,7 @@ These are the changes to each version that has been released on the official Vis
 - [ ] Add 'Open in Altova XML spy' to the right click context menu within the IDE text editor
 - [ ] Add 'Open in Altova XML spy' to the right click context menu for tabs in the tabwell
 
-
+dummy for generisize
 
 
 
