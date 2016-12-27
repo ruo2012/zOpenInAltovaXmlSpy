@@ -9,24 +9,24 @@ namespace OpenInXxx.Options
 {
     public class GeneralOptions : DialogPage
     {
-        [Category(Constants.CategorySubLevel)]
-        [DisplayName(Constants.ActualPathToExeOptionLabel)]
-        [Description(Constants.ActualPathToExeOptionDetailedDescription)]
+        [Category(ConstantsCommon.CategorySubLevel)]
+        [DisplayName(ConstantsSpecific.ActualPathToExeOptionLabel)]
+        [Description(ConstantsSpecific.ActualPathToExeOptionDetailedDescription)]
         public string ActualPathToExe { get; set; } 
 
-        [Category(Constants.CategorySubLevel)]
-        [DisplayName(Constants.TypicalFileExtensionsOptionLabel)]
-        [Description(Constants.TypicalFileExtensionsOptionDetailedDescription)]
+        [Category(ConstantsCommon.CategorySubLevel)]
+        [DisplayName(ConstantsSpecific.TypicalFileExtensionsOptionLabel)]
+        [Description(ConstantsSpecific.TypicalFileExtensionsOptionDetailedDescription)]
         public string TypicalFileExtensions { get; set; } = GetTypicalFileExtensions();
 
-        [Category(Constants.CategorySubLevel)]
-        [DisplayName(Constants.SuppressTypicalFileExtensionsWarningOptionLabel)]
-        [Description(Constants.SuppressTypicalFileExtensionsWarningDetailedDescription)]
+        [Category(ConstantsCommon.CategorySubLevel)]
+        [DisplayName(ConstantsSpecific.SuppressTypicalFileExtensionsWarningOptionLabel)]
+        [Description(ConstantsSpecific.SuppressTypicalFileExtensionsWarningDetailedDescription)]
         public bool SuppressTypicalFileExtensionsWarning { get; set; } = false;
 
-        [Category(Constants.CategorySubLevel)]
-        [DisplayName(Constants.FileQuantityWarningLimitOptionLabel)]
-        [Description(Constants.FileQuantityWarningLimitOptionDetailedDescription)]
+        [Category(ConstantsCommon.CategorySubLevel)]
+        [DisplayName(ConstantsCommon.FileQuantityWarningLimitOptionLabel)]
+        [Description(ConstantsCommon.FileQuantityWarningLimitOptionDetailedDescription)]
         public string FileQuantityWarningLimit
         {
             get
@@ -47,7 +47,7 @@ namespace OpenInXxx.Options
                 if (!isInteger)
                 {
                     MessageBox.Show(
-                        Constants.FileQuantityWarningLimitInvalid,
+                        ConstantsCommon.FileQuantityWarningLimitInvalid,
                         Vsix.Name,
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
@@ -97,7 +97,7 @@ namespace OpenInXxx.Options
 
         private static string GetTypicalFileExtensions()
         {
-            return FileHelper.GetDefaultTypicalFileExtensionsAsCsv(Constants.GetDefaultTypicalFileExtensions());
+            return FileHelper.GetDefaultTypicalFileExtensionsAsCsv(ConstantsSpecific.GetDefaultTypicalFileExtensions());
         }
 
         private string previousActualPathToExe { get; set; }
@@ -109,13 +109,13 @@ namespace OpenInXxx.Options
 
             foreach (DirectoryInfo programFilesFolder in programFilesFolders)
             {
-                var xxxParentFolderPaths = programFilesFolder.GetDirectories(Constants.XxxParentFolderName);
+                var xxxParentFolderPaths = programFilesFolder.GetDirectories(ConstantsSpecific.XxxParentFolderName);
                 foreach (DirectoryInfo xxxParentFolderPath in xxxParentFolderPaths)
                 {
-                    var xxxFolderPaths = xxxParentFolderPath.GetDirectories(Constants.XxxFolderName + "*");
+                    var xxxFolderPaths = xxxParentFolderPath.GetDirectories(ConstantsSpecific.XxxFolderName + "*");
                     foreach (DirectoryInfo xxxFolderPath in xxxFolderPaths)
                     {
-                        var path = Path.Combine(xxxFolderPath.FullName, Constants.ExeFileToBrowseFor);
+                        var path = Path.Combine(xxxFolderPath.FullName, ConstantsSpecific.ExeFileToBrowseFor);
                         if (File.Exists(path))
                         {
                             return path;

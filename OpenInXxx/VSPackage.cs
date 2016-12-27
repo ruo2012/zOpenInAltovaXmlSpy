@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using OpenInXxx.Helpers;
 using OpenInXxx.Options;
 using System;
 using System.Diagnostics.CodeAnalysis;
@@ -11,7 +12,7 @@ namespace OpenInXxx
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(VSPackage.PackageGuidString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    [ProvideOptionPage(typeof(GeneralOptions), Helpers.Constants.CategoryTopLevel, Helpers.Constants.CategorySubLevel, 0, 0, true)]
+    [ProvideOptionPage(typeof(GeneralOptions), ConstantsSpecific.CategoryTopLevel, ConstantsCommon.CategorySubLevel, 0, 0, true)]
     public sealed class VSPackage : Package
     {
         public static GeneralOptions Options { get; private set; }

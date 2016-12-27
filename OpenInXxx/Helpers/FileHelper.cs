@@ -106,7 +106,7 @@ namespace OpenInXxx.Helpers
         public static void PromptForActualExeFile(string originalPathToFile)
         {
             var box = MessageBox.Show(
-               Helpers.Constants.PromptForActualExeFile(originalPathToFile),
+               ConstantsCommon.PromptForActualExeFile(originalPathToFile),
                Vsix.Name,
                MessageBoxButtons.YesNo,
                MessageBoxIcon.Question);
@@ -133,7 +133,7 @@ namespace OpenInXxx.Helpers
             var dialog = new OpenFileDialog
             {
                 DefaultExt = ".exe",
-                FileName = Helpers.Constants.ExeFileToBrowseFor,
+                FileName = ConstantsSpecific.ExeFileToBrowseFor,
                 InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
                 CheckFileExists = true
             };

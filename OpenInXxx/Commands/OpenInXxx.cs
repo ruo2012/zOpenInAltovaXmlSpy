@@ -86,7 +86,7 @@ namespace OpenInXxx
                         proceedToExecute = false;
                         if (actualFilesToBeOpened.Count() > fileQuantityWarningLimitInt)
                         {
-                            proceedToExecute = ConfirmProceedToExecute(Helpers.Constants.ConfirmOpenFileQuantityExceedsWarningLimit);
+                            proceedToExecute = ConfirmProceedToExecute(ConstantsCommon.ConfirmOpenFileQuantityExceedsWarningLimit);
                         }
                         else
                         {
@@ -104,7 +104,7 @@ namespace OpenInXxx
                                 }
                                 else
                                 {
-                                    proceedToExecute = ConfirmProceedToExecute(Helpers.Constants.ConfirmOpenNonTypicalFile);
+                                    proceedToExecute = ConfirmProceedToExecute(ConstantsSpecific.ConfirmOpenNonTypicalFile);
                                 }
                             }
                             if (proceedToExecute)
@@ -155,7 +155,7 @@ namespace OpenInXxx
         {
             bool proceedToExecute = false;
 
-            messageText += Environment.NewLine + Environment.NewLine + Helpers.Constants.ContinueAnyway;
+            messageText += Environment.NewLine + Environment.NewLine + ConstantsCommon.ContinueAnyway;
 
             var box = MessageBox.Show(
                 messageText,
@@ -174,7 +174,7 @@ namespace OpenInXxx
         private static void InformUserMissingFile(string missingFileName)
         {
             MessageBox.Show(
-                Helpers.Constants.InformUserMissingFile(missingFileName),
+                ConstantsCommon.InformUserMissingFile(missingFileName),
                 Vsix.Name,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Stop);
@@ -183,7 +183,7 @@ namespace OpenInXxx
         private static void ShowUnexpectedError()
         {
             MessageBox.Show(
-                Helpers.Constants.UnexpectedError,
+                ConstantsSpecific.UnexpectedError,
                 Vsix.Name,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
