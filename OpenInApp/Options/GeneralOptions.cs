@@ -1,11 +1,11 @@
 ﻿using Microsoft.VisualStudio.Shell;
-using OpenInXxx.Helpers;
+using OpenInApp.Helpers;
 using System;
 using System.ComponentModel;
 using System.IO;
 using System.Windows.Forms;
 
-namespace OpenInXxx.Options
+namespace OpenInApp.Options
 {
     public class GeneralOptions : DialogPage
     {

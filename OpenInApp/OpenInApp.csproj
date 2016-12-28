@@ -23,8 +23,8 @@
     <ProjectGuid>{0DD8CCEA-DC16-4065-B148-E388F9FD30D3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenInXxx</RootNamespace>
-    <AssemblyName>OpenInXxx</AssemblyName>
+    <RootNamespace>OpenInApp</RootNamespace>
+    <AssemblyName>OpenInApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
@@ -54,7 +54,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Commands\OpenInXxx.cs" />
+    <Compile Include="Commands\OpenInApp.cs" />
     <Compile Include="Dtos\FileBrowseOutcomeDto.cs" />
     <Compile Include="Helpers\ConstantsCommon.cs" />
     <Compile Include="Helpers\OptionsHelper.cs" />

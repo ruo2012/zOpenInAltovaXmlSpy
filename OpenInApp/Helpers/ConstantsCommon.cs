@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OpenInXxx.Helpers
+namespace OpenInApp.Helpers
 {
     public static class ConstantsCommon
     {

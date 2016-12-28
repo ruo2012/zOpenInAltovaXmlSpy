@@ -1,11 +1,11 @@
 ﻿using Microsoft.VisualStudio.Shell;
-using OpenInXxx.Helpers;
-using OpenInXxx.Options;
+using OpenInApp.Helpers;
+using OpenInApp.Options;
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
-namespace OpenInXxx
+namespace OpenInApp
 {
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]       
@@ -27,7 +27,7 @@ namespace OpenInXxx
         {
             Options = (GeneralOptions)GetDialogPage(typeof(GeneralOptions));
 
-            OpenInXxx.Initialize(this);
+            OpenInApp.Initialize(this);
             base.Initialize();
         }
     }

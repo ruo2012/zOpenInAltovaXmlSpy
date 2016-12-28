@@ -1,7 +1,7 @@
 ﻿using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
-using OpenInXxx.Helpers;
+using OpenInApp.Helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -10,11 +10,11 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace OpenInXxx
+namespace OpenInApp
 {
-    internal sealed class OpenInXxx
+    internal sealed class OpenInApp
     {
-        public static OpenInXxx Instance { get; private set; }
+        public static OpenInApp Instance { get; private set; }
         public const int CommandId = 0x0100;
         public static readonly Guid CommandSet = new Guid("82afac2b-5d6f-43f7-8c37-c575653bc07c");
 
@@ -23,10 +23,10 @@ namespace OpenInXxx
 
         public static void Initialize(Package package)
         {
-            Instance = new OpenInXxx(package);
+            Instance = new OpenInApp(package);
         }
 
-        private OpenInXxx(Package package)
+        private OpenInApp(Package package)
         {
             if (package == null)
             {

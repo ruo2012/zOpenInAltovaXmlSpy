@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace OpenInXxx.Dtos
+namespace OpenInApp.Dtos
 {
     internal class FileBrowseOutcomeDto
     {

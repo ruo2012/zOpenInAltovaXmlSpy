@@ -1,8 +1,8 @@
 ﻿using NUnit.Framework;
-using OpenInXxx.Helpers;
+using OpenInApp.Helpers;
 using System.Collections.Generic;
 
-namespace OpenInXxxTests.Helpers.Tests
+namespace OpenInAppTests.Helpers.Tests
 {
     [TestFixture()]
     public class FileHelperTests

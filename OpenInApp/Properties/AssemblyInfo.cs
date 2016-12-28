@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OpenInXxx")]
+[assembly: AssemblyTitle("OpenInApp")]
 [assembly: AssemblyDescription("Open file from solution explorer within Visual Studio")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Greg Trevellick")]
-[assembly: AssemblyProduct("OpenInXxx")]
-[assembly: AssemblyCopyright("Greg Trevellick 2016")]
+[assembly: AssemblyProduct("OpenInApp")]
+[assembly: AssemblyCopyright("Copyright © Greg Trevellick 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -20,7 +20,7 @@ See the [change log](CHANGELOG.md) for road map and release history. Bugs can be
 
 ## Features
 
-![](OpenInXxx/Resources/ReadMeScreenShot_ContextMenu.png)
+![](OpenInApp/Resources/ReadMeScreenShot_ContextMenu.png)
 
 - Open multiple files simultaneously with XML Spy directly from within Solution Explorer.
 
@@ -30,7 +30,7 @@ See the [change log](CHANGELOG.md) for road map and release history. Bugs can be
 
 ## Options
 
-![](OpenInXxx/Resources/ReadMeScreenShot_OptionsGeneral.png)
+![](OpenInApp/Resources/ReadMeScreenShot_OptionsGeneral.png)
 
 <!--COPY END FOR VS GALLERY-->
 

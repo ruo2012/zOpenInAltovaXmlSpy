@@ -1,4 +1,4 @@
-﻿namespace OpenInXxx.Helpers
+﻿namespace OpenInApp.Helpers
 {
     public static class OptionsHelper
     {

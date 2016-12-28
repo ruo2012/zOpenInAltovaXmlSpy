@@ -2,7 +2,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace OpenInXxx.Helpers
+namespace OpenInApp.Helpers
 {
     public static class LogHelper
     {

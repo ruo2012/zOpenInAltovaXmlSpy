@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OpenInXxx {
+namespace OpenInApp {
     using System;
     
     

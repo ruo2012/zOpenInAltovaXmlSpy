@@ -1,6 +1,6 @@
 ﻿using EnvDTE;
 using EnvDTE80;
-using OpenInXxx.Dtos;
+using OpenInApp.Dtos;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace OpenInXxx.Helpers
+namespace OpenInApp.Helpers
 {
     public static class FileHelper
     {
