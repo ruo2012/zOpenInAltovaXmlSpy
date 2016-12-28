@@ -11,17 +11,17 @@ namespace OpenInXxx.Options
     {
         [Category(ConstantsCommon.CategorySubLevel)]
         [DisplayName(ConstantsSpecific.ActualPathToExeOptionLabel)]
-        [Description(ConstantsSpecific.ActualPathToExeOptionDetailedDescription)]
+        [Description(ConstantsCommon.ActualPathToExeOptionDetailedDescription)]
         public string ActualPathToExe { get; set; }
 
         [Category(ConstantsCommon.CategorySubLevel)]
-        [DisplayName(ConstantsSpecific.TypicalFileExtensionsOptionLabel)]
-        [Description(ConstantsSpecific.TypicalFileExtensionsOptionDetailedDescription)]
+        [DisplayName(ConstantsCommon.TypicalFileExtensionsOptionLabel)]
+        [Description(ConstantsCommon.TypicalFileExtensionsOptionDetailedDescription)]
         public string TypicalFileExtensions { get; set; } = GetTypicalFileExtensions();
 
         [Category(ConstantsCommon.CategorySubLevel)]
-        [DisplayName(ConstantsSpecific.SuppressTypicalFileExtensionsWarningOptionLabel)]
-        [Description(ConstantsSpecific.SuppressTypicalFileExtensionsWarningDetailedDescription)]
+        [DisplayName(ConstantsCommon.SuppressTypicalFileExtensionsWarningOptionLabel)]
+        [Description(ConstantsCommon.SuppressTypicalFileExtensionsWarningDetailedDescription)]
         public bool SuppressTypicalFileExtensionsWarning { get; set; } = false;
 
         [Category(ConstantsCommon.CategorySubLevel)]
@@ -115,7 +115,7 @@ namespace OpenInXxx.Options
                     var xxxFolderPaths = xxxParentFolderPath.GetDirectories(ConstantsSpecific.XxxFolderName + "*");
                     foreach (DirectoryInfo xxxFolderPath in xxxFolderPaths)
                     {
-                        var path = Path.Combine(xxxFolderPath.FullName, ConstantsSpecific.ExeFileToBrowseFor);
+                        var path = Path.Combine(xxxFolderPath.FullName, ConstantsSpecific.XxxFileToBrowseFor);
                         if (File.Exists(path))
                         {
                             return path;

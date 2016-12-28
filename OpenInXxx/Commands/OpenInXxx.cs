@@ -104,7 +104,7 @@ namespace OpenInXxx
                                 }
                                 else
                                 {
-                                    proceedToExecute = ConfirmProceedToExecute(ConstantsSpecific.GetConfirmOpenNonTypicalFile(ConstantsSpecific.XxxTypicalFileContentDescriptor));
+                                    proceedToExecute = ConfirmProceedToExecute(ConstantsCommon.ConfirmOpenNonTypicalFile);
                                 }
                             }
                             if (proceedToExecute)
@@ -183,7 +183,7 @@ namespace OpenInXxx
         private static void ShowUnexpectedError()
         {
             MessageBox.Show(
-                ConstantsSpecific.GetUnexpectedError(ConstantsSpecific.XxxGitHubRepoName),
+                ConstantsCommon.UnexpectedError,
                 Vsix.Name,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error);

@@ -133,7 +133,7 @@ namespace OpenInXxx.Helpers
             var dialog = new OpenFileDialog
             {
                 DefaultExt = ".exe",
-                FileName = ConstantsSpecific.ExeFileToBrowseFor,
+                FileName = ConstantsSpecific.XxxFileToBrowseFor,
                 InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
                 CheckFileExists = true
             };
