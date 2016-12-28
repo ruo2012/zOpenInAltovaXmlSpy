@@ -36,7 +36,7 @@ namespace OpenInAppTests.Helpers.Tests
         [TestCase("HillsTrump.vs.DonnieClinton", false)]
         [TestCase("JaneDoe.xslt", true)]
         [TestCase("JoePublic.cs", false)]
-        [TestCase("JohnDoe.xml", true)]
+        [TestCase("JohnDoe.Xml", true)]
         [TestCase("MadsKristensen.", false)]
         [TestCase(null, false)]
         [Category("I")]

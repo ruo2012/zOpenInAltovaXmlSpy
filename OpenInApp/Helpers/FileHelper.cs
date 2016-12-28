@@ -12,7 +12,7 @@ namespace OpenInApp.Helpers
 {
     public static class FileHelper
     {
-        public static bool AreTypicalFileExtensions(IEnumerable<string> fullFileNames, IEnumerable<string> typicalFileExtension)
+        public static bool AreTypicalFileExtensions(IEnumerable<string> fullFileNames, IEnumerable<string> typicalFileExtensions)
         {
             var result = false;
 
@@ -22,7 +22,7 @@ namespace OpenInApp.Helpers
             {
                 if (!string.IsNullOrEmpty(fileTypeExtension))
                 {
-                    result = typicalFileExtension.Contains(fileTypeExtension.TrimStart('.'));
+                    result = typicalFileExtensions.Contains(fileTypeExtension.TrimStart('.'), StringComparer.CurrentCultureIgnoreCase);
                 }
             }
 
