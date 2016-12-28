@@ -59,7 +59,7 @@ namespace OpenInApp.Helpers
             }
         }
 
-        private static FileBrowseOutcomeDto BrowseToFileLocation()
+        public static FileBrowseOutcomeDto BrowseToFileLocation()
         {
             var dialog = new OpenFileDialog
             {
