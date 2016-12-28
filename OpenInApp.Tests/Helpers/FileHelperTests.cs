@@ -2,7 +2,7 @@
 using OpenInApp.Helpers;
 using System.Collections.Generic;
 
-namespace OpenInAppTests.Helpers.Tests
+namespace OpenInApp.Tests.Helpers.Tests
 {
     [TestFixture()]
     public class FileHelperTests
