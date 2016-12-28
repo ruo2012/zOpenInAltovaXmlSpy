@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using OpenInApp.Common.Helpers;
 using OpenInApp.Helpers;
 using OpenInApp.Options;
 using System;
