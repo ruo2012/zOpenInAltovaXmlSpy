@@ -98,7 +98,7 @@ namespace OpenInApp.Options
 
         private static string GetTypicalFileExtensions()
         {
-            return FileHelper.GetDefaultTypicalFileExtensionsAsCsv(ConstantsSpecific.GetDefaultTypicalFileExtensions());
+            return CommonFileHelper.GetDefaultTypicalFileExtensionsAsCsv(ConstantsSpecific.GetDefaultTypicalFileExtensions());
         }
 
         private string previousActualPathToExe { get; set; }
@@ -140,7 +140,7 @@ namespace OpenInApp.Options
 
             if (actualPathToExeChanged)
             {
-                if (!FileHelper.DoesFileExist(ActualPathToExe))
+                if (!CommonFileHelper.DoesFileExist(ActualPathToExe))
                 {
                     e.ApplyBehavior = ApplyKind.Cancel;
                     FileHelper.PromptForActualExeFile(ActualPathToExe);

@@ -54,14 +54,14 @@ namespace OpenInApp
 
             try
             {
-                var actualPathToExeExists = FileHelper.DoesFileExist(VSPackage.Options.ActualPathToExe);
+                var actualPathToExeExists = CommonFileHelper.DoesFileExist(VSPackage.Options.ActualPathToExe);
 
                 bool proceedToExecute = true;
                 if (!actualPathToExeExists)
                 {
                     proceedToExecute = false;
                     FileHelper.PromptForActualExeFile(VSPackage.Options.ActualPathToExe);
-                    var newActualPathToExeExists = FileHelper.DoesFileExist(VSPackage.Options.ActualPathToExe);
+                    var newActualPathToExeExists = CommonFileHelper.DoesFileExist(VSPackage.Options.ActualPathToExe);
                     if (newActualPathToExeExists)
                     {
                         proceedToExecute = true;
@@ -75,10 +75,10 @@ namespace OpenInApp
                 if (proceedToExecute)
                 {
                     var actualFilesToBeOpened = FileHelper.GetFileNamesToBeOpened(dte);
-                    var actualFilesToBeOpenedExist = FileHelper.DoFilesExist(actualFilesToBeOpened);
+                    var actualFilesToBeOpenedExist = CommonFileHelper.DoFilesExist(actualFilesToBeOpened);
                     if (!actualFilesToBeOpenedExist)
                     {
-                        var missingFileName = FileHelper.GetMissingFileName(actualFilesToBeOpened);
+                        var missingFileName = CommonFileHelper.GetMissingFileName(actualFilesToBeOpened);
                         InformUserMissingFile(missingFileName);
                     }
                     else
@@ -95,8 +95,8 @@ namespace OpenInApp
                         }
                         if (proceedToExecute)
                         {
-                            var typicalFileExtensionAsList = FileHelper.GetTypicalFileExtensionAsList(VSPackage.Options.TypicalFileExtensions);
-                            var areTypicalFileExtensions = FileHelper.AreTypicalFileExtensions(actualFilesToBeOpened, typicalFileExtensionAsList);
+                            var typicalFileExtensionAsList = CommonFileHelper.GetTypicalFileExtensionAsList(VSPackage.Options.TypicalFileExtensions);
+                            var areTypicalFileExtensions = CommonFileHelper.AreTypicalFileExtensions(actualFilesToBeOpened, typicalFileExtensionAsList);
                             if (!areTypicalFileExtensions)
                             {
                                 if (VSPackage.Options.SuppressTypicalFileExtensionsWarning)

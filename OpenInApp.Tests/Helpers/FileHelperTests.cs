@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using OpenInApp.Helpers;
+using OpenInApp.Common.Helpers;
 using System.Collections.Generic;
 
 namespace OpenInApp.Tests.Helpers.Tests
@@ -45,7 +45,7 @@ namespace OpenInApp.Tests.Helpers.Tests
             var fullFileNames = new List<string> { fileName };
 
             //Act
-            var actual = FileHelper.AreTypicalFileExtensions(fullFileNames, typicalFileExtensions);
+            var actual = CommonFileHelper.AreTypicalFileExtensions(fullFileNames, typicalFileExtensions);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -59,7 +59,7 @@ namespace OpenInApp.Tests.Helpers.Tests
             var testList = new List<string> { "a", "b", "c" };
 
             //Act
-            var actual = FileHelper.GetDefaultTypicalFileExtensionsAsCsv(testList);
+            var actual = CommonFileHelper.GetDefaultTypicalFileExtensionsAsCsv(testList);
 
             //Assert
             Assert.AreEqual("a,b,c", actual);
@@ -73,7 +73,7 @@ namespace OpenInApp.Tests.Helpers.Tests
             var expected = new List<string> { "a", "b", "c" };
 
             //Act
-            var actual = FileHelper.GetTypicalFileExtensionAsList(csvString);
+            var actual = CommonFileHelper.GetTypicalFileExtensionAsList(csvString);
 
             //Assert
             Assert.AreEqual(expected, actual);
