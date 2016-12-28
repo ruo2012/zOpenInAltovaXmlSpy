@@ -12,7 +12,7 @@ namespace OpenInXxx.Options
         [Category(ConstantsCommon.CategorySubLevel)]
         [DisplayName(ConstantsSpecific.ActualPathToExeOptionLabel)]
         [Description(ConstantsSpecific.ActualPathToExeOptionDetailedDescription)]
-        public string ActualPathToExe { get; set; } 
+        public string ActualPathToExe { get; set; }
 
         [Category(ConstantsCommon.CategorySubLevel)]
         [DisplayName(ConstantsSpecific.TypicalFileExtensionsOptionLabel)]
