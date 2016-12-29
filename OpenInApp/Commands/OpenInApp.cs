@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace OpenInApp
 {
-    internal sealed class OpenInApp
+    internal sealed class OpenInApp //gregt Rename OpenInAppCommand
     {
         public static OpenInApp Instance { get; private set; }
         public static string Caption = Vsix.Name + " " + Vsix.Version;

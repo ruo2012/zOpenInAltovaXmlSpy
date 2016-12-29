@@ -5,9 +5,9 @@
 
   <Extern href="vsshlids.h"/>
 
-  <Commands package="guidOpenInXmlSpyPackage">
+  <Commands package="guidOpenInAppPackage">
     <Buttons>
-      <Button guid="guidOpenInVsCmdSet" id="OpenInXmlSpy" priority="0x0500" type="Button">
+      <Button guid="guidOpenInVsCmdSet" id="OpenInApp" priority="0x0500" type="Button">
         <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_FOLDER_EXPLORE" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
@@ -22,23 +22,23 @@
   </Commands>
   
       <CommandPlacements>
-        <CommandPlacement guid="guidOpenInVsCmdSet" id="OpenInXmlSpy" priority="0x0500">
+        <CommandPlacement guid="guidOpenInVsCmdSet" id="OpenInApp" priority="0x0500">
             <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_SOLUTION_EXPLORE"/>
         </CommandPlacement>
-        <CommandPlacement guid="guidOpenInVsCmdSet" id="OpenInXmlSpy" priority="0x0500">
+        <CommandPlacement guid="guidOpenInVsCmdSet" id="OpenInApp" priority="0x0500">
             <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJECT_EXPLORE"/>
         </CommandPlacement>
-        <CommandPlacement guid="guidOpenInVsCmdSet" id="OpenInXmlSpy" priority="0x0500">
+        <CommandPlacement guid="guidOpenInVsCmdSet" id="OpenInApp" priority="0x0500">
             <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_ITEM_OPEN"/>
         </CommandPlacement>
     </CommandPlacements>
    
   <Symbols>
         <!-- This is the package guid. -->    
-    <GuidSymbol name="guidOpenInXmlSpyPackage" value="{62a5a896-9442-4aa3-a87c-0daece0e04a5}" />
+    <GuidSymbol name="guidOpenInAppPackage" value="{62a5a896-9442-4aa3-a87c-0daece0e04a5}" />
 
     <GuidSymbol name="guidOpenInVsCmdSet" value="{82afac2b-5d6f-43f7-8c37-c575653bc07c}">
-      <IDSymbol name="OpenInXmlSpy" value="0x0100" />
+      <IDSymbol name="OpenInApp" value="0x0100" />
     </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{90ece3e2-9811-460b-a9c1-0d9ec151cf74}" >

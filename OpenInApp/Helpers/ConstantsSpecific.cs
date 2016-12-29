@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 namespace OpenInApp.Helpers
 {
-    public static class ConstantsSpecific
+    public static class ConstantsSpecific //gregt rename ConstantsForApp
     {
         public const string AppFolderName = "Altova";
-        public const string AppSubFolderName = "XMLSpy";
+        public const string AppSubFolderName = "XMLSpy";//null in most cases
         public const string ExecutableFileToBrowseFor = "XmlSpy.exe";
         public const string OptionsCategoryTopLevel = "Open in Altova XmlSpy";
         public static IEnumerable<string> GetDefaultTypicalFileExtensions()
@@ -36,6 +36,7 @@ namespace OpenInApp.Helpers
                 "jsp",
                 "math",
                 "mml",
+                "nuspec",
                 "potm",
                 "potx",
                 "ppam",

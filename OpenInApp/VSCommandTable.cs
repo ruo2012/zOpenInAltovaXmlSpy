@@ -12,10 +12,10 @@ namespace OpenInApp
     /// </summary>
     internal sealed partial class PackageGuids
     {
-        public const string guidOpenInXmlSpyPackageString = "62a5a896-9442-4aa3-a87c-0daece0e04a5";
+        public const string guidOpenInAppPackageString = "62a5a896-9442-4aa3-a87c-0daece0e04a5";
         public const string guidOpenInVsCmdSetString = "82afac2b-5d6f-43f7-8c37-c575653bc07c";
         public const string guidImagesString = "90ece3e2-9811-460b-a9c1-0d9ec151cf74";
-        public static Guid guidOpenInXmlSpyPackage = new Guid(guidOpenInXmlSpyPackageString);
+        public static Guid guidOpenInAppPackage = new Guid(guidOpenInAppPackageString);
         public static Guid guidOpenInVsCmdSet = new Guid(guidOpenInVsCmdSetString);
         public static Guid guidImages = new Guid(guidImagesString);
     }
@@ -24,7 +24,7 @@ namespace OpenInApp
     /// </summary>
     internal sealed partial class PackageIds
     {
-        public const int OpenInXmlSpy = 0x0100;
+        public const int OpenInApp = 0x0100;
         public const int bmpPic1 = 0x0001;
     }
 }
