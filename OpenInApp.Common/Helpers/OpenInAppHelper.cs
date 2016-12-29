@@ -1,10 +1,41 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 namespace OpenInApp.Common.Helpers
 {
     public class OpenInAppHelper
     {
+        public static void InvokeCommand(IEnumerable<string> actualFilesToBeOpened, string fullPath)
+        {
+            var arguments = " ";
+
+            foreach (var actualFileToBeOpened in actualFilesToBeOpened)
+            {
+                arguments += "\"" + actualFileToBeOpened + "\"" + " ";
+            }
+
+            var start = new ProcessStartInfo()
+            {
+                WorkingDirectory = Path.GetDirectoryName(fullPath),
+                FileName = Path.GetFileName(fullPath),
+                Arguments = arguments,
+                CreateNoWindow = true,
+                WindowStyle = ProcessWindowStyle.Hidden
+            };
+
+            try
+            {
+                using (Process.Start(start)) { }
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
+        }
+
         public static bool ConfirmProceedToExecute(string vsixName, string vsixVersion, string messageText)
         {
             bool proceedToExecute = false;
