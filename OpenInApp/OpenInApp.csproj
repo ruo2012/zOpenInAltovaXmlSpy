@@ -55,7 +55,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Commands\OpenInApp.cs" />
-    <Compile Include="Helpers\OptionsHelper.cs" />
     <Compile Include="source.extension.Designer.cs">
       <DependentUpon>source.extension.cs</DependentUpon>
     </Compile>

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace OpenInApp.Helpers
 {
-    public static class FileHelper
+    public static class FileHelper  //gregt rename to options helper ?
     {
         public static void PromptForActualExeFile(string originalPathToFile)
         {
