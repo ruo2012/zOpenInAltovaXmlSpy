@@ -1,5 +1,5 @@
-﻿//using EnvDTE;
-//using EnvDTE80;
+﻿using EnvDTE;
+using EnvDTE80;
 //using OpenInApp.Common.Dtos;
 //using OpenInApp.Common.Helpers;
 using System;
@@ -14,6 +14,29 @@ namespace OpenInApp.Common.Helpers
 {
     public class CommonFileHelper
     {
+        public static IEnumerable<string> GetFileNamesToBeOpened(DTE2 dte)
+        {
+            var items = GetSelectedFilesToBeOpened(dte);
+
+            var result = new List<string>();
+
+            foreach (var item in items)
+            {
+                result.Add(item);
+            }
+
+            return result;
+        }
+
+        public static IEnumerable<string> GetSelectedFilesToBeOpened(DTE2 dte)
+        {
+            var selectedItems = (Array)dte.ToolWindows.SolutionExplorer.SelectedItems;
+
+            return from selectedItem in selectedItems.Cast<UIHierarchyItem>()
+                   let projectItem = selectedItem.Object as ProjectItem
+                   select projectItem.FileNames[1];
+        }
+
         public static bool AreTypicalFileExtensions(IEnumerable<string> fullFileNames, IEnumerable<string> typicalFileExtensions)
         {
             var result = false;

@@ -74,7 +74,7 @@ namespace OpenInApp
                 }
                 if (proceedToExecute)
                 {
-                    var actualFilesToBeOpened = FileHelper.GetFileNamesToBeOpened(dte);
+                    var actualFilesToBeOpened = CommonFileHelper.GetFileNamesToBeOpened(dte);
                     var actualFilesToBeOpenedExist = CommonFileHelper.DoFilesExist(actualFilesToBeOpened);
                     if (!actualFilesToBeOpenedExist)
                     {
