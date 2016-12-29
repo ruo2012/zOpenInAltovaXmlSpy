@@ -9,7 +9,7 @@ using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 
 namespace OpenInApp
 {
@@ -69,7 +69,7 @@ namespace OpenInApp
                     else
                     {
                         // User somehow managed to browse/select a new location for the exe that doesn't actually exist - virtually impossible, but you never know...
-                        InformUserMissingFile(VSPackage.Options.ActualPathToExe);
+                        CommandHelper.InformUserMissingFile(Vsix.Name, Vsix.Version, VSPackage.Options.ActualPathToExe);
                     }
                 }
                 if (proceedToExecute)
@@ -79,7 +79,7 @@ namespace OpenInApp
                     if (!actualFilesToBeOpenedExist)
                     {
                         var missingFileName = CommonFileHelper.GetMissingFileName(actualFilesToBeOpened);
-                        InformUserMissingFile(missingFileName);
+                        CommandHelper.InformUserMissingFile(Vsix.Name, Vsix.Version, missingFileName);
                     }
                     else
                     {
@@ -87,7 +87,7 @@ namespace OpenInApp
                         proceedToExecute = false;
                         if (actualFilesToBeOpened.Count() > fileQuantityWarningLimitInt)
                         {
-                            proceedToExecute = ConfirmProceedToExecute(ConstantsCommon.ConfirmOpenFileQuantityExceedsWarningLimit);
+                            proceedToExecute = CommandHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, ConstantsCommon.ConfirmOpenFileQuantityExceedsWarningLimit);
                         }
                         else
                         {
@@ -105,7 +105,7 @@ namespace OpenInApp
                                 }
                                 else
                                 {
-                                    proceedToExecute = ConfirmProceedToExecute(ConstantsCommon.ConfirmOpenNonTypicalFile);
+                                    proceedToExecute = CommandHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, ConstantsCommon.ConfirmOpenNonTypicalFile);
                                 }
                             }
                             if (proceedToExecute)
@@ -152,34 +152,34 @@ namespace OpenInApp
             }
         }
 
-        private static bool ConfirmProceedToExecute(string messageText)
-        {
-            bool proceedToExecute = false;
+        //private static bool ConfirmProceedToExecute(string messageText)
+        //{
+        //    bool proceedToExecute = false;
 
-            messageText += Environment.NewLine + Environment.NewLine + ConstantsCommon.ContinueAnyway;
+        //    messageText += Environment.NewLine + Environment.NewLine + ConstantsCommon.ContinueAnyway;
 
-            var box = MessageBox.Show(
-                messageText,
-                Vsix.Name,
-                MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Warning);
+        //    var box = MessageBox.Show(
+        //        messageText,
+        //        Vsix.Name,
+        //        MessageBoxButtons.OKCancel,
+        //        MessageBoxIcon.Warning);
 
-            if (box == DialogResult.OK)
-            {
-                proceedToExecute = true;
-            }
+        //    if (box == DialogResult.OK)
+        //    {
+        //        proceedToExecute = true;
+        //    }
 
-            return proceedToExecute;
-        }
+        //    return proceedToExecute;
+        //}
 
-        private static void InformUserMissingFile(string missingFileName)
-        {
-            MessageBox.Show(
-                ConstantsCommon.InformUserMissingFile(missingFileName),
-                Vsix.Name,
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Stop);
-        }
+        //private static void InformUserMissingFile(string missingFileName)
+        //{
+        //    MessageBox.Show(
+        //        ConstantsCommon.InformUserMissingFile(missingFileName),
+        //        Vsix.Name,
+        //        MessageBoxButtons.OK,
+        //        MessageBoxIcon.Stop);
+        //}
 
         //private static void ShowUnexpectedError()
         //{
