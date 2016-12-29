@@ -109,7 +109,7 @@ namespace OpenInApp
                             }
                             if (proceedToExecute)
                             {
-                                InvokeCommand(actualFilesToBeOpened);
+                                InvokeCommand(actualFilesToBeOpened, VSPackage.Options.ActualPathToExe);
                             }
                         }
                     }
@@ -122,9 +122,8 @@ namespace OpenInApp
             }
         }
 
-        private static void InvokeCommand(IEnumerable<string> actualFilesToBeOpened)
+        private static void InvokeCommand(IEnumerable<string> actualFilesToBeOpened, string fullPath)
         {
-            var fullPath = VSPackage.Options.ActualPathToExe;
             var arguments = " ";
 
             foreach (var actualFileToBeOpened in actualFilesToBeOpened)
