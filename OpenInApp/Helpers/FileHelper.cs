@@ -8,7 +8,7 @@ namespace OpenInApp.Helpers
         public static void PromptForActualExeFile(string originalPathToFile)
         {
             var box = MessageBox.Show(
-               ConstantsCommon.PromptForActualExeFile(originalPathToFile),
+               CommonConstants.PromptForActualExeFile(originalPathToFile),
                Vsix.Name,
                MessageBoxButtons.YesNo,
                MessageBoxIcon.Question);

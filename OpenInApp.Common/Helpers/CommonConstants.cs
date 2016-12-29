@@ -2,7 +2,7 @@
 
 namespace OpenInApp.Common.Helpers
 {
-    public static class ConstantsCommon
+    public static class CommonConstants
     {
 
         public const string CategorySubLevel = "General";

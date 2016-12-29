@@ -13,7 +13,7 @@ namespace OpenInApp.Common.Helpers
         {
             bool proceedToExecute = false;
 
-            messageText += Environment.NewLine + Environment.NewLine + ConstantsCommon.ContinueAnyway;
+            messageText += Environment.NewLine + Environment.NewLine + CommonConstants.ContinueAnyway;
 
             var box = MessageBox.Show(
                 messageText,
@@ -32,7 +32,7 @@ namespace OpenInApp.Common.Helpers
         public static void ShowUnexpectedError(string vsixName, string vsixVersion)
         {
             MessageBox.Show(
-                ConstantsCommon.UnexpectedError,
+                CommonConstants.UnexpectedError,
                 vsixName + " " + vsixVersion,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
@@ -41,7 +41,7 @@ namespace OpenInApp.Common.Helpers
         public static void InformUserMissingFile(string vsixName, string vsixVersion, string missingFileName)
         {
             MessageBox.Show(
-                ConstantsCommon.InformUserMissingFile(missingFileName),
+                CommonConstants.InformUserMissingFile(missingFileName),
                 vsixName + " " + vsixVersion,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Stop);

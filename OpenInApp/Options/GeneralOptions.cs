@@ -8,24 +8,24 @@ namespace OpenInApp.Options
 {
     public class GeneralOptions : DialogPage
     {
-        [Category(ConstantsCommon.CategorySubLevel)]
+        [Category(CommonConstants.CategorySubLevel)]
         [DisplayName(ConstantsSpecific.ActualPathToExeOptionLabel)]
-        [Description(ConstantsCommon.ActualPathToExeOptionDetailedDescription)]
+        [Description(CommonConstants.ActualPathToExeOptionDetailedDescription)]
         public string ActualPathToExe { get; set; }
 
-        [Category(ConstantsCommon.CategorySubLevel)]
-        [DisplayName(ConstantsCommon.TypicalFileExtensionsOptionLabel)]
-        [Description(ConstantsCommon.TypicalFileExtensionsOptionDetailedDescription)]
+        [Category(CommonConstants.CategorySubLevel)]
+        [DisplayName(CommonConstants.TypicalFileExtensionsOptionLabel)]
+        [Description(CommonConstants.TypicalFileExtensionsOptionDetailedDescription)]
         public string TypicalFileExtensions { get; set; } = GetTypicalFileExtensions();
 
-        [Category(ConstantsCommon.CategorySubLevel)]
-        [DisplayName(ConstantsCommon.SuppressTypicalFileExtensionsWarningOptionLabel)]
-        [Description(ConstantsCommon.SuppressTypicalFileExtensionsWarningDetailedDescription)]
+        [Category(CommonConstants.CategorySubLevel)]
+        [DisplayName(CommonConstants.SuppressTypicalFileExtensionsWarningOptionLabel)]
+        [Description(CommonConstants.SuppressTypicalFileExtensionsWarningDetailedDescription)]
         public bool SuppressTypicalFileExtensionsWarning { get; set; } = false;
 
-        [Category(ConstantsCommon.CategorySubLevel)]
-        [DisplayName(ConstantsCommon.FileQuantityWarningLimitOptionLabel)]
-        [Description(ConstantsCommon.FileQuantityWarningLimitOptionDetailedDescription)]
+        [Category(CommonConstants.CategorySubLevel)]
+        [DisplayName(CommonConstants.FileQuantityWarningLimitOptionLabel)]
+        [Description(CommonConstants.FileQuantityWarningLimitOptionDetailedDescription)]
         public string FileQuantityWarningLimit
         {
             get
@@ -46,7 +46,7 @@ namespace OpenInApp.Options
                 if (!isInteger)
                 {
                     MessageBox.Show(
-                        ConstantsCommon.FileQuantityWarningLimitInvalid,
+                        CommonConstants.FileQuantityWarningLimitInvalid,
                         Vsix.Name + " " + Vsix.Version,
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);

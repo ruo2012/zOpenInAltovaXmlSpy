@@ -86,7 +86,7 @@ namespace OpenInApp
                         proceedToExecute = false;
                         if (actualFilesToBeOpened.Count() > fileQuantityWarningLimitInt)
                         {
-                            proceedToExecute = CommandHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, ConstantsCommon.ConfirmOpenFileQuantityExceedsWarningLimit);
+                            proceedToExecute = CommandHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, CommonConstants.ConfirmOpenFileQuantityExceedsWarningLimit);
                         }
                         else
                         {
@@ -104,7 +104,7 @@ namespace OpenInApp
                                 }
                                 else
                                 {
-                                    proceedToExecute = CommandHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, ConstantsCommon.ConfirmOpenNonTypicalFile);
+                                    proceedToExecute = CommandHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, CommonConstants.ConfirmOpenNonTypicalFile);
                                 }
                             }
                             if (proceedToExecute)
