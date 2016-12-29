@@ -4,10 +4,7 @@ using Microsoft.VisualStudio.Shell;
 using OpenInApp.Common.Helpers;
 using OpenInApp.Helpers;
 using System;
-//using System.Collections.Generic;
 using System.ComponentModel.Design;
-//using System.Diagnostics;
-//using System.IO;
 using System.Linq;
 
 namespace OpenInApp
@@ -121,33 +118,5 @@ namespace OpenInApp
                 OpenInAppHelper.ShowUnexpectedError(Vsix.Name, Vsix.Version);
             }
         }
-
-        //private static void InvokeCommand(IEnumerable<string> actualFilesToBeOpened, string fullPath)
-        //{
-        //    var arguments = " ";
-
-        //    foreach (var actualFileToBeOpened in actualFilesToBeOpened)
-        //    {
-        //        arguments += "\"" + actualFileToBeOpened + "\"" + " ";
-        //    }
-
-        //    var start = new ProcessStartInfo()
-        //    {
-        //        WorkingDirectory = Path.GetDirectoryName(fullPath),
-        //        FileName = Path.GetFileName(fullPath),
-        //        Arguments = arguments,
-        //        CreateNoWindow = true,
-        //        WindowStyle = ProcessWindowStyle.Hidden
-        //    };
-
-        //    try
-        //    {
-        //        using (System.Diagnostics.Process.Start(start)) { }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw (ex);
-        //    }
-        //}
     }
 }
