@@ -19,15 +19,22 @@ namespace OpenInApp.Helpers
                     var resultAndNamePicked = CommonFileHelper.BrowseToFileLocation(ConstantsSpecific.ExecutableFileToBrowseFor);
                     if (resultAndNamePicked.DialogResult == DialogResult.OK)
                     {
-                        OptionsHelper.PersistVSToolOptions(resultAndNamePicked.FileNameChosen);
+                        PersistVSToolOptions(resultAndNamePicked.FileNameChosen);
                     }
                     break;
                 case DialogResult.No:
-                    OptionsHelper.PersistVSToolOptions(originalPathToFile);
+                    PersistVSToolOptions(originalPathToFile);
                     break;
                 default:
                     break;
             }
+        }
+
+        //this method cannot be pushed down w/o lots of DI refactoriung, and even then may not be possible
+        private static void PersistVSToolOptions(string fileName)
+        {
+            VSPackage.Options.ActualPathToExe = fileName;
+            VSPackage.Options.SaveSettingsToStorage();
         }
     }
 }
