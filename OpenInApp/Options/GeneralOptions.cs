@@ -32,7 +32,7 @@ namespace OpenInApp.Options
             {
                 if (string.IsNullOrEmpty(fileQuantityWarningLimit))
                 {
-                    return "10";//gregt make this a ConstantsCommon.cs
+                    return CommonConstants.DefaultFileQuantityWarningLimit;
                 }
                 else
                 {
