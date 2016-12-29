@@ -29,7 +29,7 @@ namespace OpenInApp
         {
             if (package == null)
             {
-                LogHelper.Log(new ArgumentNullException("package"));
+                CommonLogHelper.Log(new ArgumentNullException("package"));
                 OpenInAppHelper.ShowUnexpectedError(caption);
             }
             else
@@ -116,7 +116,7 @@ namespace OpenInApp
             }
             catch (Exception ex)
             {
-                LogHelper.Log(ex);
+                CommonLogHelper.Log(ex);
                 OpenInAppHelper.ShowUnexpectedError(caption);
             }
         }

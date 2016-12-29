@@ -59,7 +59,6 @@
       <DependentUpon>source.extension.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\ConstantsSpecific.cs" />
-    <Compile Include="Helpers\LogHelper.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Options\GeneralOptions.cs">
       <SubType>Component</SubType>

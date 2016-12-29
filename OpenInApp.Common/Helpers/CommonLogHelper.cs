@@ -2,9 +2,9 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace OpenInApp.Helpers
+namespace OpenInApp.Common.Helpers
 {
-    public static class LogHelper
+    public static class CommonLogHelper
     {
         private static IVsOutputWindowPane pane;
         private static object _syncRoot = new object();
