@@ -1,9 +1,7 @@
 ﻿using Microsoft.VisualStudio.Shell;
 using OpenInApp.Common.Helpers;
 using OpenInApp.Helpers;
-using System;
 using System.ComponentModel;
-using System.IO;
 using System.Windows.Forms;
 
 namespace OpenInApp.Options
@@ -105,31 +103,6 @@ namespace OpenInApp.Options
         }
 
         private string previousActualPathToExe { get; set; }
-
-        //private static string GetActualPathToExe()
-        //{
-        //    var programFiles = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles));
-        //    var programFilesFolders = programFiles.Parent.GetDirectories(programFiles.Name.Replace(" (x86)", string.Empty) + "*");
-
-        //    foreach (DirectoryInfo programFilesFolder in programFilesFolders)
-        //    {
-        //        var appParentFolderPaths = programFilesFolder.GetDirectories(ConstantsSpecific.AppParentFolderName);
-        //        foreach (DirectoryInfo appParentFolderPath in appParentFolderPaths)
-        //        {
-        //            var appFolderPaths = appParentFolderPath.GetDirectories(ConstantsSpecific.AppFolderName + "*");
-        //            foreach (DirectoryInfo appFolderPath in appFolderPaths)
-        //            {
-        //                var path = Path.Combine(appFolderPath.FullName, ConstantsSpecific.ExecutableFileToBrowseFor);
-        //                if (File.Exists(path))
-        //                {
-        //                    return path;
-        //                }
-        //            }
-        //        }
-        //    }
-
-        //    return null;
-        //}
 
         protected override void OnApply(PageApplyEventArgs e)
         {
