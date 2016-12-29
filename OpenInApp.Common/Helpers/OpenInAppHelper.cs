@@ -36,7 +36,7 @@ namespace OpenInApp.Common.Helpers
             }
         }
 
-        public static bool ConfirmProceedToExecute(string vsixName, string vsixVersion, string messageText)
+        public static bool ConfirmProceedToExecute(string caption, string messageText)
         {
             bool proceedToExecute = false;
 
@@ -44,7 +44,7 @@ namespace OpenInApp.Common.Helpers
 
             var box = MessageBox.Show(
                 messageText,
-                vsixName + " " + vsixVersion,
+                caption,
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning);
 
@@ -56,20 +56,20 @@ namespace OpenInApp.Common.Helpers
             return proceedToExecute;
         }
 
-        public static void ShowUnexpectedError(string vsixName, string vsixVersion)
+        public static void ShowUnexpectedError(string caption)
         {
             MessageBox.Show(
                 CommonConstants.UnexpectedError,
-                vsixName + " " + vsixVersion,
+                caption,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
         }
 
-        public static void InformUserMissingFile(string vsixName, string vsixVersion, string missingFileName)
+        public static void InformUserMissingFile(string caption, string missingFileName)
         {
             MessageBox.Show(
                 CommonConstants.InformUserMissingFile(missingFileName),
-                vsixName + " " + vsixVersion,
+                caption,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Stop);
         }

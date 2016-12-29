@@ -15,6 +15,7 @@ namespace OpenInApp
         public const int CommandId = 0x0100;
         public static readonly Guid CommandSet = new Guid("82afac2b-5d6f-43f7-8c37-c575653bc07c");
 
+        private string caption = Vsix.Name + " " + Vsix.Version;
         private readonly Package _package;
         private IServiceProvider ServiceProvider { get { return this._package; } }
 
@@ -28,7 +29,7 @@ namespace OpenInApp
             if (package == null)
             {
                 LogHelper.Log(new ArgumentNullException("package"));
-                OpenInAppHelper.ShowUnexpectedError(Vsix.Name, Vsix.Version);
+                OpenInAppHelper.ShowUnexpectedError(caption);
             }
             else
             {
@@ -65,7 +66,7 @@ namespace OpenInApp
                     else
                     {
                         // User somehow managed to browse/select a new location for the exe that doesn't actually exist - virtually impossible, but you never know...
-                        OpenInAppHelper.InformUserMissingFile(Vsix.Name, Vsix.Version, VSPackage.Options.ActualPathToExe);
+                        OpenInAppHelper.InformUserMissingFile(caption, VSPackage.Options.ActualPathToExe);
                     }
                 }
                 if (proceedToExecute)
@@ -75,7 +76,7 @@ namespace OpenInApp
                     if (!actualFilesToBeOpenedExist)
                     {
                         var missingFileName = CommonFileHelper.GetMissingFileName(actualFilesToBeOpened);
-                        OpenInAppHelper.InformUserMissingFile(Vsix.Name, Vsix.Version, missingFileName);
+                        OpenInAppHelper.InformUserMissingFile(caption, missingFileName);
                     }
                     else
                     {
@@ -83,7 +84,7 @@ namespace OpenInApp
                         proceedToExecute = false;
                         if (actualFilesToBeOpened.Count() > fileQuantityWarningLimitInt)
                         {
-                            proceedToExecute = OpenInAppHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, CommonConstants.ConfirmOpenFileQuantityExceedsWarningLimit);
+                            proceedToExecute = OpenInAppHelper.ConfirmProceedToExecute(caption, CommonConstants.ConfirmOpenFileQuantityExceedsWarningLimit);
                         }
                         else
                         {
@@ -101,7 +102,7 @@ namespace OpenInApp
                                 }
                                 else
                                 {
-                                    proceedToExecute = OpenInAppHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, CommonConstants.ConfirmOpenNonTypicalFile);
+                                    proceedToExecute = OpenInAppHelper.ConfirmProceedToExecute(caption, CommonConstants.ConfirmOpenNonTypicalFile);
                                 }
                             }
                             if (proceedToExecute)
@@ -115,7 +116,7 @@ namespace OpenInApp
             catch (Exception ex)
             {
                 LogHelper.Log(ex);
-                OpenInAppHelper.ShowUnexpectedError(Vsix.Name, Vsix.Version);
+                OpenInAppHelper.ShowUnexpectedError(caption);
             }
         }
     }
