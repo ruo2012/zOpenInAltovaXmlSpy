@@ -1,15 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using OpenInApp.Common.Helpers;
+using System.Collections.Generic;
 
 namespace OpenInApp.Helpers
 {
     public static class ConstantsSpecific
     {
-        public const string AppFolderName = "XMLSpy";
-        public const string AppParentFolderName = "Altova";
-        internal const string CommonActualPathToExeOptionLabel = "Application path to " + ExecutableFileToBrowseFor;
+        public const string AppFolderName = "Altova";
+        public const string AppSubFolderName = "XMLSpy";
         public const string ExecutableFileToBrowseFor = "XmlSpy.exe";
         public const string OptionsCategoryTopLevel = "Open in Altova XmlSpy";
-
         public static IEnumerable<string> GetDefaultTypicalFileExtensions()
         {
             return new List<string>
@@ -88,5 +87,9 @@ namespace OpenInApp.Helpers
 	            #endregion
             };
         }
+
+
+
+        internal const string CommonActualPathToExeOptionLabel = CommonConstants.ActualPathToExeOptionLabelPrefix + ExecutableFileToBrowseFor;
     }
 }

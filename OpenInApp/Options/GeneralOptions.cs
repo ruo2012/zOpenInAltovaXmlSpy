@@ -89,8 +89,8 @@ namespace OpenInApp.Options
             if (string.IsNullOrEmpty(ActualPathToExe))
             {
                 ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe(
-                    ConstantsSpecific.AppParentFolderName, 
-                    ConstantsSpecific.AppFolderName,
+                    ConstantsSpecific.AppFolderName, 
+                    ConstantsSpecific.AppSubFolderName,
                     ConstantsSpecific.ExecutableFileToBrowseFor);
             }
 

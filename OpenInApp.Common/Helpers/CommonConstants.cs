@@ -5,6 +5,7 @@ namespace OpenInApp.Common.Helpers
     public static class CommonConstants
     {
         public const string ActualPathToExeOptionDetailedDescription = "Specify the absolute install path for the application.";
+        public const string ActualPathToExeOptionLabelPrefix = "Application path to ";
         public const string CategorySubLevel = "General";
         public static string ConfirmOpenFileQuantityExceedsWarningLimit = @"You have selected a large quantity of files to be opened.";
         public const string ConfirmOpenNonTypicalFile = "One or more selected files typically contains data that the application does not expect.";
