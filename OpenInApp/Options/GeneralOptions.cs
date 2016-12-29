@@ -1,5 +1,4 @@
-﻿//gregt done enough for now
-using Microsoft.VisualStudio.Shell;
+﻿using Microsoft.VisualStudio.Shell;
 using OpenInApp.Common.Helpers;
 using OpenInApp.Helpers;
 using System.ComponentModel;
@@ -61,7 +60,6 @@ namespace OpenInApp.Options
 
         private string fileQuantityWarningLimit;
 
-        //this cannot be pushed down w/o lots of DI refactoriung, and even then may not be possible
         internal int FileQuantityWarningLimitInt
         {
             get
@@ -79,7 +77,6 @@ namespace OpenInApp.Options
             }
         }
 
-        //this method cannot be pushed down w/o lots of DI refactoriung, and even then may not be possible
         public override void LoadSettingsFromStorage()
         {
             base.LoadSettingsFromStorage();
@@ -100,7 +97,6 @@ namespace OpenInApp.Options
             previousActualPathToExe = ActualPathToExe;
         }
 
-        //this method cannot be pushed down w/o lots of DI refactoriung, and even then may not be possible
         private static string GetTypicalFileExtensions()
         {
             return CommonFileHelper.GetDefaultTypicalFileExtensionsAsCsv(ConstantsSpecific.GetDefaultTypicalFileExtensions());
@@ -108,7 +104,6 @@ namespace OpenInApp.Options
 
         private string previousActualPathToExe { get; set; }
 
-        //this method cannot be pushed down w/o lots of DI refactoriung, and even then may not be possible
         protected override void OnApply(PageApplyEventArgs e)
         {
             var actualPathToExeChanged = false;

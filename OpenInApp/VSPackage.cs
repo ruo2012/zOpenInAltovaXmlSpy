@@ -1,5 +1,4 @@
-﻿//gregt done enough for now
-using Microsoft.VisualStudio.Shell;
+﻿using Microsoft.VisualStudio.Shell;
 using OpenInApp.Common.Helpers;
 using OpenInApp.Helpers;
 using OpenInApp.Options;
