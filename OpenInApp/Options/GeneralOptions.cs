@@ -9,7 +9,7 @@ namespace OpenInApp.Options
     public class GeneralOptions : DialogPage
     {
         [Category(CommonConstants.CategorySubLevel)]
-        [DisplayName(ConstantsSpecific.ActualPathToExeOptionLabel)]
+        [DisplayName(ConstantsSpecific.CommonActualPathToExeOptionLabel)]
         [Description(CommonConstants.ActualPathToExeOptionDetailedDescription)]
         public string ActualPathToExe { get; set; }
 

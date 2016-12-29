@@ -4,10 +4,9 @@ namespace OpenInApp.Helpers
 {
     public static class ConstantsSpecific
     {
-        public const string ActualPathToExeOptionLabel = "Application path to " + ExecutableFileToBrowseFor;
         public const string AppFolderName = "XMLSpy";
         public const string AppParentFolderName = "Altova";
-        public const string AppTypicalFileContentDescriptor = "XML";
+        internal const string CommonActualPathToExeOptionLabel = "Application path to " + ExecutableFileToBrowseFor;
         public const string ExecutableFileToBrowseFor = "XmlSpy.exe";
         public const string OptionsCategoryTopLevel = "Open in Altova XmlSpy";
 
