@@ -47,7 +47,7 @@ namespace OpenInApp.Options
                 {
                     MessageBox.Show(
                         CommonConstants.FileQuantityWarningLimitInvalid,
-                        Vsix.Name + " " + Vsix.Version,//gregt replace with caption
+                        OpenInApp.Caption,
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
@@ -59,7 +59,7 @@ namespace OpenInApp.Options
         }
 
         private string fileQuantityWarningLimit;
-
+        
         internal int FileQuantityWarningLimitInt
         {
             get

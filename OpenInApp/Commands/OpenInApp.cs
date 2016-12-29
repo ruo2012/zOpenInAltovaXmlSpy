@@ -12,10 +12,10 @@ namespace OpenInApp
     internal sealed class OpenInApp
     {
         public static OpenInApp Instance { get; private set; }
+        public static string Caption = Vsix.Name + " " + Vsix.Version;
         public const int CommandId = 0x0100;
         public static readonly Guid CommandSet = new Guid("82afac2b-5d6f-43f7-8c37-c575653bc07c");
-
-        private string caption = Vsix.Name + " " + Vsix.Version;
+        
         private readonly Package _package;
         private IServiceProvider ServiceProvider { get { return this._package; } }
 
@@ -29,7 +29,7 @@ namespace OpenInApp
             if (package == null)
             {
                 CommonLogHelper.Log(new ArgumentNullException("package"));
-                OpenInAppHelper.ShowUnexpectedError(caption);
+                OpenInAppHelper.ShowUnexpectedError(Caption);
             }
             else
             {
@@ -66,7 +66,7 @@ namespace OpenInApp
                     else
                     {
                         // User somehow managed to browse/select a new location for the exe that doesn't actually exist - virtually impossible, but you never know...
-                        OpenInAppHelper.InformUserMissingFile(caption, VSPackage.Options.ActualPathToExe);
+                        OpenInAppHelper.InformUserMissingFile(Caption, VSPackage.Options.ActualPathToExe);
                     }
                 }
                 if (proceedToExecute)
@@ -76,7 +76,7 @@ namespace OpenInApp
                     if (!actualFilesToBeOpenedExist)
                     {
                         var missingFileName = CommonFileHelper.GetMissingFileName(actualFilesToBeOpened);
-                        OpenInAppHelper.InformUserMissingFile(caption, missingFileName);
+                        OpenInAppHelper.InformUserMissingFile(Caption, missingFileName);
                     }
                     else
                     {
@@ -84,7 +84,7 @@ namespace OpenInApp
                         proceedToExecute = false;
                         if (actualFilesToBeOpened.Count() > fileQuantityWarningLimitInt)
                         {
-                            proceedToExecute = OpenInAppHelper.ConfirmProceedToExecute(caption, CommonConstants.ConfirmOpenFileQuantityExceedsWarningLimit);
+                            proceedToExecute = OpenInAppHelper.ConfirmProceedToExecute(Caption, CommonConstants.ConfirmOpenFileQuantityExceedsWarningLimit);
                         }
                         else
                         {
@@ -102,7 +102,7 @@ namespace OpenInApp
                                 }
                                 else
                                 {
-                                    proceedToExecute = OpenInAppHelper.ConfirmProceedToExecute(caption, CommonConstants.ConfirmOpenNonTypicalFile);
+                                    proceedToExecute = OpenInAppHelper.ConfirmProceedToExecute(Caption, CommonConstants.ConfirmOpenNonTypicalFile);
                                 }
                             }
                             if (proceedToExecute)
@@ -116,7 +116,7 @@ namespace OpenInApp
             catch (Exception ex)
             {
                 CommonLogHelper.Log(ex);
-                OpenInAppHelper.ShowUnexpectedError(caption);
+                OpenInAppHelper.ShowUnexpectedError(Caption);
             }
         }
     }
