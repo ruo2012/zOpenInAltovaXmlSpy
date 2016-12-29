@@ -9,7 +9,6 @@ using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-//using System.Windows.Forms;
 
 namespace OpenInApp
 {
@@ -151,43 +150,5 @@ namespace OpenInApp
                 throw (ex);
             }
         }
-
-        //private static bool ConfirmProceedToExecute(string messageText)
-        //{
-        //    bool proceedToExecute = false;
-
-        //    messageText += Environment.NewLine + Environment.NewLine + ConstantsCommon.ContinueAnyway;
-
-        //    var box = MessageBox.Show(
-        //        messageText,
-        //        Vsix.Name,
-        //        MessageBoxButtons.OKCancel,
-        //        MessageBoxIcon.Warning);
-
-        //    if (box == DialogResult.OK)
-        //    {
-        //        proceedToExecute = true;
-        //    }
-
-        //    return proceedToExecute;
-        //}
-
-        //private static void InformUserMissingFile(string missingFileName)
-        //{
-        //    MessageBox.Show(
-        //        ConstantsCommon.InformUserMissingFile(missingFileName),
-        //        Vsix.Name,
-        //        MessageBoxButtons.OK,
-        //        MessageBoxIcon.Stop);
-        //}
-
-        //private static void ShowUnexpectedError()
-        //{
-        //    MessageBox.Show(
-        //        ConstantsCommon.UnexpectedError,
-        //        Vsix.Name,
-        //        MessageBoxButtons.OK,
-        //        MessageBoxIcon.Error);
-        //}
     }
 }
