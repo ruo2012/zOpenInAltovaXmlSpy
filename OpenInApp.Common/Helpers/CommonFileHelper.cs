@@ -1,5 +1,6 @@
 ﻿using EnvDTE;
 using EnvDTE80;
+using OpenInApp.Common.Dtos;
 //using OpenInApp.Common.Dtos;
 //using OpenInApp.Common.Helpers;
 using System;
@@ -7,13 +8,32 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-//using System.Windows.Forms;
+using System.Windows.Forms;
 //using System.Threading.Tasks;
 
 namespace OpenInApp.Common.Helpers
 {
     public class CommonFileHelper
     {
+        public static FileBrowseOutcomeDto BrowseToFileLocation(string executableFileToBrowseFor)
+        {
+            var dialog = new OpenFileDialog
+            {
+                DefaultExt = ".exe",
+                FileName = executableFileToBrowseFor,
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+                CheckFileExists = true
+            };
+
+            var dialogResult = dialog.ShowDialog();
+
+            return new FileBrowseOutcomeDto
+            {
+                FileNameChosen = dialog.FileName,
+                DialogResult = dialogResult
+            };
+        }
+
         public static IEnumerable<string> GetFileNamesToBeOpened(DTE2 dte)
         {
             var items = GetSelectedFilesToBeOpened(dte);

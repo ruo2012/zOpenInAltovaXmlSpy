@@ -1,6 +1,6 @@
-﻿using OpenInApp.Common.Dtos;
+﻿//using OpenInApp.Common.Dtos;
 using OpenInApp.Common.Helpers;
-using System;
+//using System;
 using System.Windows.Forms;
 
 namespace OpenInApp.Helpers
@@ -18,7 +18,7 @@ namespace OpenInApp.Helpers
             switch (box)
             {
                 case DialogResult.Yes:
-                    var resultAndNamePicked = BrowseToFileLocation();
+                    var resultAndNamePicked = CommonFileHelper.BrowseToFileLocation(ConstantsSpecific.ExecutableFileToBrowseFor);
                     if (resultAndNamePicked.DialogResult == DialogResult.OK)
                     {
                         OptionsHelper.PersistVSToolOptions(resultAndNamePicked.FileNameChosen);
@@ -32,23 +32,23 @@ namespace OpenInApp.Helpers
             }
         }
 
-        public static FileBrowseOutcomeDto BrowseToFileLocation()
-        {
-            var dialog = new OpenFileDialog
-            {
-                DefaultExt = ".exe",
-                FileName = ConstantsSpecific.ExecutableFileToBrowseFor,
-                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
-                CheckFileExists = true
-            };
+        //public static FileBrowseOutcomeDto BrowseToFileLocation()
+        //{
+        //    var dialog = new OpenFileDialog
+        //    {
+        //        DefaultExt = ".exe",
+        //        FileName = ConstantsSpecific.ExecutableFileToBrowseFor,
+        //        InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+        //        CheckFileExists = true
+        //    };
 
-            var dialogResult = dialog.ShowDialog();
+        //    var dialogResult = dialog.ShowDialog();
 
-            return new FileBrowseOutcomeDto
-            {
-                FileNameChosen = dialog.FileName,
-                DialogResult = dialogResult
-            };
-        }
+        //    return new FileBrowseOutcomeDto
+        //    {
+        //        FileNameChosen = dialog.FileName,
+        //        DialogResult = dialogResult
+        //    };
+        //}
     }
 }
