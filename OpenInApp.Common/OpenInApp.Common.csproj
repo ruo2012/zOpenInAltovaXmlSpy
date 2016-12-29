@@ -55,6 +55,7 @@
     <Compile Include="Helpers\CommandHelper.cs" />
     <Compile Include="Helpers\CommonFileHelper.cs" />
     <Compile Include="Helpers\ConstantsCommon.cs" />
+    <Compile Include="Helpers\GeneralOptionsHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
