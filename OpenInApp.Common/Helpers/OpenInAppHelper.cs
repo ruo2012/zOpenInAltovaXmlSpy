@@ -56,15 +56,6 @@ namespace OpenInApp.Common.Helpers
             return proceedToExecute;
         }
 
-        public static void ShowUnexpectedError(string caption)
-        {
-            MessageBox.Show(
-                CommonConstants.UnexpectedError,
-                caption,
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error);
-        }
-
         public static void InformUserMissingFile(string caption, string missingFileName)
         {
             MessageBox.Show(
@@ -72,6 +63,15 @@ namespace OpenInApp.Common.Helpers
                 caption,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Stop);
+        }
+
+        public static void ShowUnexpectedError(string caption)
+        {
+            MessageBox.Show(
+                CommonConstants.UnexpectedError,
+                caption,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
         }
     }
 }
