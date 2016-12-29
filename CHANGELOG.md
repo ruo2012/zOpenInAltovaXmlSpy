@@ -8,6 +8,9 @@ These are the changes to each version that has been released on the official Vis
 
 - [x] Initial release
 
+
+<!--bug fix - typical options not case sensitive - fixed in next release-->
+
 # Road Map
 
 - [ ] Support for additional VS versions
