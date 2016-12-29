@@ -1,4 +1,5 @@
-﻿using EnvDTE;
+﻿//gregt done enough for now
+using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
 using OpenInApp.Common.Helpers;
