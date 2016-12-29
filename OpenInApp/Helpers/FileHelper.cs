@@ -43,7 +43,7 @@ namespace OpenInApp.Helpers
             var dialog = new OpenFileDialog
             {
                 DefaultExt = ".exe",
-                FileName = ConstantsSpecific.XxxFileToBrowseFor,
+                FileName = ConstantsSpecific.ExecutableFileToBrowseFor,
                 InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
                 CheckFileExists = true
             };

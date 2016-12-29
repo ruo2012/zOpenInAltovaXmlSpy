@@ -1,21 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace OpenInApp.Helpers
 {
     public static class ConstantsSpecific
     {
-        public const string CategoryTopLevel = "Open in Altova XmlSpy";
-        public const string XxxFileToBrowseFor = "XmlSpy.exe";
-        public const string XxxFolderName = "XMLSpy";
-        public const string XxxParentFolderName = "Altova";
-        public const string XxxTypicalFileContentDescriptor = "XML";
+        public const string ActualPathToExeOptionLabel = "Application path to " + ExecutableFileToBrowseFor;
+        public const string AppFolderName = "XMLSpy";
+        public const string AppParentFolderName = "Altova";
+        public const string AppTypicalFileContentDescriptor = "XML";
+        public const string ExecutableFileToBrowseFor = "XmlSpy.exe";
+        public const string OptionsCategoryTopLevel = "Open in Altova XmlSpy";
+
         public static IEnumerable<string> GetDefaultTypicalFileExtensions()
         {
-            //The list below largely based upon Altova's own list of supported files.
-            //http://manual.altova.com/XMLSpy/spyprofessional/index.html?filetypes.htm
             return new List<string>
             {
+                //See also http://manual.altova.com/XMLSpy/spyprofessional/index.html?filetypes.htm
                 #region Extensions
                 "asp",
                 "biz",
@@ -89,8 +89,5 @@ namespace OpenInApp.Helpers
 	            #endregion
             };
         }
-
-        //COMMON
-        public const string ActualPathToExeOptionLabel = "Application path to " + XxxFileToBrowseFor;
     }
 }

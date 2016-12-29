@@ -110,13 +110,13 @@ namespace OpenInApp.Options
 
             foreach (DirectoryInfo programFilesFolder in programFilesFolders)
             {
-                var xxxParentFolderPaths = programFilesFolder.GetDirectories(ConstantsSpecific.XxxParentFolderName);
+                var xxxParentFolderPaths = programFilesFolder.GetDirectories(ConstantsSpecific.AppParentFolderName);
                 foreach (DirectoryInfo xxxParentFolderPath in xxxParentFolderPaths)
                 {
-                    var xxxFolderPaths = xxxParentFolderPath.GetDirectories(ConstantsSpecific.XxxFolderName + "*");
+                    var xxxFolderPaths = xxxParentFolderPath.GetDirectories(ConstantsSpecific.AppFolderName + "*");
                     foreach (DirectoryInfo xxxFolderPath in xxxFolderPaths)
                     {
-                        var path = Path.Combine(xxxFolderPath.FullName, ConstantsSpecific.XxxFileToBrowseFor);
+                        var path = Path.Combine(xxxFolderPath.FullName, ConstantsSpecific.ExecutableFileToBrowseFor);
                         if (File.Exists(path))
                         {
                             return path;
