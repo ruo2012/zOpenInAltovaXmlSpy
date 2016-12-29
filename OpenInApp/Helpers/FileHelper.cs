@@ -1,6 +1,4 @@
-﻿//using OpenInApp.Common.Dtos;
-using OpenInApp.Common.Helpers;
-//using System;
+﻿using OpenInApp.Common.Helpers;
 using System.Windows.Forms;
 
 namespace OpenInApp.Helpers
@@ -31,24 +29,5 @@ namespace OpenInApp.Helpers
                     break;
             }
         }
-
-        //public static FileBrowseOutcomeDto BrowseToFileLocation()
-        //{
-        //    var dialog = new OpenFileDialog
-        //    {
-        //        DefaultExt = ".exe",
-        //        FileName = ConstantsSpecific.ExecutableFileToBrowseFor,
-        //        InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
-        //        CheckFileExists = true
-        //    };
-
-        //    var dialogResult = dialog.ShowDialog();
-
-        //    return new FileBrowseOutcomeDto
-        //    {
-        //        FileNameChosen = dialog.FileName,
-        //        DialogResult = dialogResult
-        //    };
-        //}
     }
 }
