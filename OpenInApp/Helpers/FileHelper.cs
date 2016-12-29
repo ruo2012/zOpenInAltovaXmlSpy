@@ -9,14 +9,14 @@ namespace OpenInApp.Helpers
         {
             var box = MessageBox.Show(
                CommonConstants.PromptForActualExeFile(originalPathToFile),
-               OpenInApp.Caption,
+               OpenInAppCommand.Caption,
                MessageBoxButtons.YesNo,
                MessageBoxIcon.Question);
 
             switch (box)
             {
                 case DialogResult.Yes:
-                    var resultAndNamePicked = CommonFileHelper.BrowseToFileLocation(ConstantsSpecific.ExecutableFileToBrowseFor);
+                    var resultAndNamePicked = CommonFileHelper.BrowseToFileLocation(ConstantsForApp.ExecutableFileToBrowseFor);
                     if (resultAndNamePicked.DialogResult == DialogResult.OK)
                     {
                         PersistVSToolOptions(resultAndNamePicked.FileNameChosen);

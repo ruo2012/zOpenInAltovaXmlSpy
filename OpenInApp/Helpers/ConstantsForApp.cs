@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace OpenInApp.Helpers
 {
-    public static class ConstantsSpecific //gregt rename ConstantsForApp
+    public static class ConstantsForApp 
     {
         public const string AppFolderName = "Altova";
         public const string AppSubFolderName = "XMLSpy";//null in most cases

@@ -9,7 +9,7 @@ namespace OpenInApp.Options
     public class GeneralOptions : DialogPage
     {
         [Category(CommonConstants.CategorySubLevel)]
-        [DisplayName(ConstantsSpecific.CommonActualPathToExeOptionLabel)]
+        [DisplayName(ConstantsForApp.CommonActualPathToExeOptionLabel)]
         [Description(CommonConstants.ActualPathToExeOptionDetailedDescription)]
         public string ActualPathToExe { get; set; }
 
@@ -47,7 +47,7 @@ namespace OpenInApp.Options
                 {
                     MessageBox.Show(
                         CommonConstants.FileQuantityWarningLimitInvalid,
-                        OpenInApp.Caption,
+                        OpenInAppCommand.Caption,
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
@@ -89,9 +89,9 @@ namespace OpenInApp.Options
             if (string.IsNullOrEmpty(ActualPathToExe))
             {
                 ActualPathToExe = GeneralOptionsHelper.GetActualPathToExe(
-                    ConstantsSpecific.AppFolderName, 
-                    ConstantsSpecific.AppSubFolderName,
-                    ConstantsSpecific.ExecutableFileToBrowseFor);
+                    ConstantsForApp.AppFolderName, 
+                    ConstantsForApp.AppSubFolderName,
+                    ConstantsForApp.ExecutableFileToBrowseFor);
             }
 
             previousActualPathToExe = ActualPathToExe;
@@ -99,7 +99,7 @@ namespace OpenInApp.Options
 
         private static string GetTypicalFileExtensions()
         {
-            return CommonFileHelper.GetDefaultTypicalFileExtensionsAsCsv(ConstantsSpecific.GetDefaultTypicalFileExtensions());
+            return CommonFileHelper.GetDefaultTypicalFileExtensionsAsCsv(ConstantsForApp.GetDefaultTypicalFileExtensions());
         }
 
         private string previousActualPathToExe { get; set; }

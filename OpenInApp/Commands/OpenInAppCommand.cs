@@ -9,9 +9,9 @@ using System.Linq;
 
 namespace OpenInApp
 {
-    internal sealed class OpenInApp //gregt Rename OpenInAppCommand
+    internal sealed class OpenInAppCommand 
     {
-        public static OpenInApp Instance { get; private set; }
+        public static OpenInAppCommand Instance { get; private set; }
         public static string Caption = Vsix.Name + " " + Vsix.Version;
         public const int CommandId = 0x0100;
         public static readonly Guid CommandSet = new Guid("82afac2b-5d6f-43f7-8c37-c575653bc07c");
@@ -21,10 +21,10 @@ namespace OpenInApp
 
         public static void Initialize(Package package)
         {
-            Instance = new OpenInApp(package);
+            Instance = new OpenInAppCommand(package);
         }
 
-        private OpenInApp(Package package)
+        private OpenInAppCommand(Package package)
         {
             if (package == null)
             {

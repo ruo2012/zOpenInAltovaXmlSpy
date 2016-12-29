@@ -13,7 +13,7 @@ namespace OpenInApp
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(VSPackage.PackageGuidString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    [ProvideOptionPage(typeof(GeneralOptions), ConstantsSpecific.OptionsCategoryTopLevel, CommonConstants.CategorySubLevel, 0, 0, true)]
+    [ProvideOptionPage(typeof(GeneralOptions), ConstantsForApp.OptionsCategoryTopLevel, CommonConstants.CategorySubLevel, 0, 0, true)]
     public sealed class VSPackage : Package
     {
         public static GeneralOptions Options { get; private set; }
@@ -28,7 +28,7 @@ namespace OpenInApp
         {
             Options = (GeneralOptions)GetDialogPage(typeof(GeneralOptions));
 
-            OpenInApp.Initialize(this);
+            OpenInAppCommand.Initialize(this);
             base.Initialize();
         }
     }
