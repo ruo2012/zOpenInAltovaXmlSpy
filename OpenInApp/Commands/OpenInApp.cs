@@ -32,7 +32,7 @@ namespace OpenInApp
             if (package == null)
             {
                 LogHelper.Log(new ArgumentNullException("package"));
-                ShowUnexpectedError();
+                CommandHelper.ShowUnexpectedError(Vsix.Name, Vsix.Version);
             }
             else
             {
@@ -119,7 +119,7 @@ namespace OpenInApp
             catch (Exception ex)
             {
                 LogHelper.Log(ex);
-                ShowUnexpectedError();
+                CommandHelper.ShowUnexpectedError(Vsix.Name, Vsix.Version);
             }
         }
 
@@ -181,13 +181,13 @@ namespace OpenInApp
                 MessageBoxIcon.Stop);
         }
 
-        private static void ShowUnexpectedError()
-        {
-            MessageBox.Show(
-                ConstantsCommon.UnexpectedError,
-                Vsix.Name,
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error);
-        }
+        //private static void ShowUnexpectedError()
+        //{
+        //    MessageBox.Show(
+        //        ConstantsCommon.UnexpectedError,
+        //        Vsix.Name,
+        //        MessageBoxButtons.OK,
+        //        MessageBoxIcon.Error);
+        //}
     }
 }
