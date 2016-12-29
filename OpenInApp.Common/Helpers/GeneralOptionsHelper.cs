@@ -5,10 +5,10 @@ namespace OpenInApp.Common.Helpers
 {
     public class GeneralOptionsHelper
     {
-        //public static string GetActualPathToExe(string appFolderName, string executableFileToBrowseFor)
-        //{
-        //    return GetActualPathToExe(appFolderName, null, executableFileToBrowseFor);
-        //}
+        public static string GetActualPathToExe(string appFolderName, string executableFileToBrowseFor)
+        {
+            return GetActualPathToExe(appFolderName, null, executableFileToBrowseFor);
+        }
 
         public static string GetActualPathToExe(string appFolderName, string appSubFolderName, string executableFileToBrowseFor)
         {
