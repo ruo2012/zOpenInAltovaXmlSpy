@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OpenInApp.Common.Helpers
 {
-    public class CommandHelper
+    public class OpenInAppHelper
     {
         public static bool ConfirmProceedToExecute(string vsixName, string vsixVersion, string messageText)
         {

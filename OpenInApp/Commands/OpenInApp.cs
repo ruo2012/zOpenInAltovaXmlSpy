@@ -31,7 +31,7 @@ namespace OpenInApp
             if (package == null)
             {
                 LogHelper.Log(new ArgumentNullException("package"));
-                CommandHelper.ShowUnexpectedError(Vsix.Name, Vsix.Version);
+                OpenInAppHelper.ShowUnexpectedError(Vsix.Name, Vsix.Version);
             }
             else
             {
@@ -68,7 +68,7 @@ namespace OpenInApp
                     else
                     {
                         // User somehow managed to browse/select a new location for the exe that doesn't actually exist - virtually impossible, but you never know...
-                        CommandHelper.InformUserMissingFile(Vsix.Name, Vsix.Version, VSPackage.Options.ActualPathToExe);
+                        OpenInAppHelper.InformUserMissingFile(Vsix.Name, Vsix.Version, VSPackage.Options.ActualPathToExe);
                     }
                 }
                 if (proceedToExecute)
@@ -78,7 +78,7 @@ namespace OpenInApp
                     if (!actualFilesToBeOpenedExist)
                     {
                         var missingFileName = CommonFileHelper.GetMissingFileName(actualFilesToBeOpened);
-                        CommandHelper.InformUserMissingFile(Vsix.Name, Vsix.Version, missingFileName);
+                        OpenInAppHelper.InformUserMissingFile(Vsix.Name, Vsix.Version, missingFileName);
                     }
                     else
                     {
@@ -86,7 +86,7 @@ namespace OpenInApp
                         proceedToExecute = false;
                         if (actualFilesToBeOpened.Count() > fileQuantityWarningLimitInt)
                         {
-                            proceedToExecute = CommandHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, CommonConstants.ConfirmOpenFileQuantityExceedsWarningLimit);
+                            proceedToExecute = OpenInAppHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, CommonConstants.ConfirmOpenFileQuantityExceedsWarningLimit);
                         }
                         else
                         {
@@ -104,7 +104,7 @@ namespace OpenInApp
                                 }
                                 else
                                 {
-                                    proceedToExecute = CommandHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, CommonConstants.ConfirmOpenNonTypicalFile);
+                                    proceedToExecute = OpenInAppHelper.ConfirmProceedToExecute(Vsix.Name, Vsix.Version, CommonConstants.ConfirmOpenNonTypicalFile);
                                 }
                             }
                             if (proceedToExecute)
@@ -118,7 +118,7 @@ namespace OpenInApp
             catch (Exception ex)
             {
                 LogHelper.Log(ex);
-                CommandHelper.ShowUnexpectedError(Vsix.Name, Vsix.Version);
+                OpenInAppHelper.ShowUnexpectedError(Vsix.Name, Vsix.Version);
             }
         }
 

@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dtos\FileBrowseOutcomeDto.cs" />
-    <Compile Include="Helpers\CommandHelper.cs" />
+    <Compile Include="Helpers\OpenInAppHelper.cs" />
     <Compile Include="Helpers\CommonFileHelper.cs" />
     <Compile Include="Helpers\CommonConstants.cs" />
     <Compile Include="Helpers\GeneralOptionsHelper.cs" />
