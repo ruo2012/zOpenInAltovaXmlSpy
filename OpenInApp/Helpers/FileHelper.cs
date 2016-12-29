@@ -1,18 +1,12 @@
-﻿using EnvDTE;
-using EnvDTE80;
-using OpenInApp.Common.Dtos;
+﻿using OpenInApp.Common.Dtos;
 using OpenInApp.Common.Helpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace OpenInApp.Helpers
 {
     public static class FileHelper
     {
-
-
         public static void PromptForActualExeFile(string originalPathToFile)
         {
             var box = MessageBox.Show(
@@ -58,4 +52,3 @@ namespace OpenInApp.Helpers
         }
     }
 }
-
