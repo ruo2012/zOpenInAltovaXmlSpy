@@ -68,10 +68,6 @@
       <Project>{78680fb3-22e5-4200-9756-2c2cec66161d}</Project>
       <Name>OpenInApp.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OpenInApp\OpenInApp.csproj">
-      <Project>{0DD8CCEA-DC16-4065-B148-E388F9FD30D3}</Project>
-      <Name>OpenInApp</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.txt" />
