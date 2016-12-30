@@ -11,11 +11,10 @@ namespace OpenInApp
 {
     internal sealed class OpenInAppCommand 
     {
-        public static OpenInAppCommand Instance { get; private set; }
         public static string Caption = Vsix.Name + " " + Vsix.Version;
-        public const int CommandId = 0x0100;//gregt PackageIds.OpenInApp
         public static readonly Guid CommandSet = new Guid(PackageGuids.guidOpenInVsCmdSetString);
-        
+        public static OpenInAppCommand Instance { get; private set; }
+
         private readonly Package _package;
         private IServiceProvider ServiceProvider { get { return this._package; } }
 
@@ -38,7 +37,7 @@ namespace OpenInApp
 
                 if (commandService != null)
                 {
-                    var menuCommandID = new CommandID(CommandSet, CommandId);
+                    var menuCommandID = new CommandID(CommandSet, PackageIds.OpenInApp);
                     var menuItem = new MenuCommand(MenuItemCallback, menuCommandID);
                     commandService.AddCommand(menuItem);
                 }
