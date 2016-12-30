@@ -16,18 +16,20 @@ namespace OpenInApp
         public static OpenInAppCommand Instance { get; private set; }
 
         private readonly Package _package;
-        private IServiceProvider ServiceProvider { get { return this._package; } }
+        private IServiceProvider ServiceProvider { get { return _package; } }
 
         public static void Initialize(Package package)
         {
-            Instance = new OpenInAppCommand(package);
+            Instance = new OpenInAppCommand(package);            
         }
 
         private OpenInAppCommand(Package package)
         {
+            Logger.Initialize(ServiceProvider, Caption);
+
             if (package == null)
             {
-                CommonLogHelper.Log(new ArgumentNullException("package"));
+                Logger.Log(new ArgumentNullException("package"));
                 OpenInAppHelper.ShowUnexpectedError(Caption);
             }
             else
@@ -114,7 +116,7 @@ namespace OpenInApp
             }
             catch (Exception ex)
             {
-                CommonLogHelper.Log(ex);
+                Logger.Log(ex);
                 OpenInAppHelper.ShowUnexpectedError(Caption);
             }
         }

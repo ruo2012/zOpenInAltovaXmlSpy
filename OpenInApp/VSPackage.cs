@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
 using OpenInApp.Common.Helpers;
-using OpenInApp.Helpers;
 using OpenInApp.Options;
 using System;
 using System.Diagnostics.CodeAnalysis;
@@ -13,15 +12,10 @@ namespace OpenInApp
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(PackageGuids.guidOpenInAppPackageString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    //[ProvideOptionPage(typeof(GeneralOptions), ConstantsForApp.OptionsCategoryTopLevel, CommonConstants.CategorySubLevel, 0, 0, true)]
     [ProvideOptionPage(typeof(GeneralOptions), Vsix.Name, CommonConstants.CategorySubLevel, 0, 0, true)]
     public sealed class VSPackage : Package
     {
         public static GeneralOptions Options { get; private set; }
-
-        //public VSPackage()
-        //{
-        //}
 
         protected override void Initialize()
         {
