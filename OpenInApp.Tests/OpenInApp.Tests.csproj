@@ -67,7 +67,6 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Properties\vsix-compress.props" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpenInApp.Common\OpenInApp.Common.csproj">
