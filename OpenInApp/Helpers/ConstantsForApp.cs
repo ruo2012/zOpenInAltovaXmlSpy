@@ -8,7 +8,7 @@ namespace OpenInApp.Helpers
         public const string AppFolderName = "Altova";
         public const string AppSubFolderName = "XMLSpy";//null in most cases
         public const string ExecutableFileToBrowseFor = "XmlSpy.exe";
-        public const string OptionsCategoryTopLevel = "Open in Altova XmlSpy";
+        //public const string OptionsCategoryTopLevel = "Open in Altova XmlSpy";
         public static IEnumerable<string> GetDefaultTypicalFileExtensions()
         {
             return new List<string>

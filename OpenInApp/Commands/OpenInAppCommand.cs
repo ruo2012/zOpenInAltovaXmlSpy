@@ -13,8 +13,8 @@ namespace OpenInApp
     {
         public static OpenInAppCommand Instance { get; private set; }
         public static string Caption = Vsix.Name + " " + Vsix.Version;
-        public const int CommandId = 0x0100;
-        public static readonly Guid CommandSet = new Guid("82afac2b-5d6f-43f7-8c37-c575653bc07c");
+        public const int CommandId = 0x0100;//gregt PackageIds.OpenInApp
+        public static readonly Guid CommandSet = new Guid(PackageGuids.guidOpenInVsCmdSetString);
         
         private readonly Package _package;
         private IServiceProvider ServiceProvider { get { return this._package; } }
