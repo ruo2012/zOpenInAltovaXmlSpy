@@ -14,6 +14,6 @@
           
           Default = false
     -->
-    <VC_IncludeVersionInOutput>true</VC_IncludeVersionInOutput>
+    <VC_IncludeVersionInOutput>false</VC_IncludeVersionInOutput>
   </PropertyGroup>
 </Project>
