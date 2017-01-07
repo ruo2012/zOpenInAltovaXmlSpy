@@ -21,7 +21,7 @@ Download this extension from the [VS Marketplace](https://marketplace.visualstud
 
 <!--COPY START FOR VS GALLERY-->
 
-A Visual Studio extension to open a file in [$ThirdPartyAppName$][ThirdPartyAppHomePage] directly from within Visual Studio.
+A Visual Studio extension to open a file in [Altova XMLSpy XML Editor][ThirdPartyAppHomePage] directly from within Visual Studio.
 
 [![][ThirdPartyAppOfficialLogo]][ThirdPartyAppHomePage]
 
