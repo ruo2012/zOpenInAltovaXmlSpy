@@ -15,9 +15,9 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/33e93co68kooud5r?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
 ![](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInAltovaXmlSpy.svg)
 
-Download this extension from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy).
+Download this extension from the [VS Marketplace](VSMarketplaceUrl).
 
-![](chart.png)
+[![][VSMarketplaceUrl]](chart.png)
 
 ---------------------------------------
 
