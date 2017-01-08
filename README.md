@@ -17,7 +17,7 @@
 
 Download this extension from the [VS Marketplace](VSMarketplaceUrl).
 
-[![VSMarketplaceUrl](chart.png)
+![VSMarketplaceUrl](chart.png)
 
 ---------------------------------------
 
