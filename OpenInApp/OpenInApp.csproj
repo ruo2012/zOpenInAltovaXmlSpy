@@ -186,8 +186,8 @@
       <HintPath>..\packages\Microsoft.VisualStudio.Validation.14.1.111\lib\net45\Microsoft.VisualStudio.Validation.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="OpenInApp.Common, Version=1.0.22.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\OpenInApp.Common.1.0.22\lib\net45\OpenInApp.Common.dll</HintPath>
+    <Reference Include="OpenInApp.Common, Version=1.0.27.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenInApp.Common.1.0.27\lib\net45\OpenInApp.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

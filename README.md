@@ -29,15 +29,25 @@ If you like this *free* extension, please give it a [review][VSMarketplaceReview
 
 See the [change log](CHANGELOG.md) for road map and release history. Bugs can be logged [here][GitHubRepoIssuesURL].
 
+## Who Is This Extension For ?
+
+Whilst the Visual Studio IDE has an outstanding and feature-rich editor for a wide range of file types, even in the free "Community" editions, there may be times when you wish to open a file in a different application. Examples include application/editor familiarity, gigantic file handling, or even the desire to not override the default VS editor. 
+
+In these scenarios, and many more, this extension may be of use to you.
+
+Similar "Open In" VS extensions can be found [here](https://marketplace.visualstudio.com/search?term=trevellick&target=VS&sortBy=Relevance).
+
 ## Features
 
 ![](OpenInApp/Resources/ReadMeScreenShot_ContextMenu.png)
 
-- Open multiple files simultaneously with XML Spy directly from within Solution Explorer.
+- Open *multiple*  files simultaneously with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage] directly from within Solution Explorer.
 
-- Warning if attemptimg to open a large quantity of files. The quantity is configurable, and if set very high effectively suppresses the warning altogether.
+- Warning if attempting to open a large quantity of files. The quantity is configurable in Tools | Options.
 
-- Warning if attempting to open one or more files which typically do not contain XML formated content. The list of file extensions that typically constitute XML files is configurable in Tools | Options, and the warning message can be suppressed.
+- Warning if attempting to open one or more file types whose extension is not typically associated with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage]. The list of typical file extensions is configurable in Tools | Options.
+
+- Option to supress the warning message if attempting to open a file whose extension is not typically associated with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage].
 
 ## Options
 
