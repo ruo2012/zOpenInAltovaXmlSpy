@@ -13,7 +13,7 @@
 
 [![Licence](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
 [![Build status](https://ci.appveyor.com/api/projects/status/33e93co68kooud5r?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
-![](https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInAltovaXmlSpy.svg)
+[![][VersionNumberBadgeURL]][VSMarketplaceUrl]
 
 Download this extension from the [VS Marketplace](VSMarketplaceUrl).
 
@@ -47,7 +47,11 @@ Similar "Open In" VS extensions can be found [here](https://marketplace.visualst
 
 - Warning if attempting to open a large quantity of files. The quantity is configurable in Tools | Options.
 
+![](OpenInApp/Resources/ReadMeScreenShot_WarningLargeQuantity.png)
+
 - Warning if attempting to open one or more file types whose extension is not typically associated with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage]. The list of typical file extensions is configurable in Tools | Options.
+
+![](OpenInApp/Resources/ReadMeScreenShot_WarningNonTypical.png)
 
 - Option to supress the warning message if attempting to open a file whose extension is not typically associated with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage].
 
