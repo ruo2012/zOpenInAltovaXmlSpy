@@ -1,4 +1,5 @@
-﻿using OpenInApp.Common.Helpers;
+﻿using OpenInApp.Commands;
+using OpenInApp.Common.Helpers;
 using System.Windows.Forms;
 
 namespace OpenInApp.Helpers

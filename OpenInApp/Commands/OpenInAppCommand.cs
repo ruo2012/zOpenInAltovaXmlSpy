@@ -7,7 +7,7 @@ using System;
 using System.ComponentModel.Design;
 using System.Linq;
 
-namespace OpenInApp
+namespace OpenInApp.Commands
 {
     internal sealed class OpenInAppCommand 
     {
