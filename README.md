@@ -17,8 +17,6 @@
 
 Download this extension from the [VS Marketplace](VSMarketplaceUrl).
 
-[![](chart.png)][VSMarketplaceUrl]
-
 ---------------------------------------
 
 <!--COPY START FOR VS GALLERY-->
@@ -90,3 +88,5 @@ Also adapted from code originally written by [Calvin Allen](https://github.com/C
 Additional thanks goes to [Build 2016 Conference](https://channel9.msdn.com/Events/Build/2016/B886) and [Visual Studio Toolbox](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Extensions-by-Mads-Kristensen).
 
 Thanks also to [Altova][ThirdPartyAppHomePage] themselves, who have additional IDE integration available [here](https://www.altova.com/ide_integration.html).
+
+[![](chart.png)][VSMarketplaceUrl]
