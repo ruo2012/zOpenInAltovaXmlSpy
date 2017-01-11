@@ -21,7 +21,7 @@ Download this extension from the [VS Marketplace](VSMarketplaceUrl).
 
 <!--COPY START FOR VS GALLERY-->
 
-A Visual Studio extension to open a file in [Altova XMLSpy XML Editor][ThirdPartyAppHomePage] directly from within Visual Studio.
+Open *multiple* files simultaneously with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage] directly from Solution Explorer.
 
 [![][ThirdPartyAppOfficialLogo]][ThirdPartyAppHomePage]
 
@@ -40,8 +40,6 @@ Similar "Open In" VS extensions can be found [here](https://marketplace.visualst
 ## Features
 
 ![](OpenInApp/Resources/ReadMeScreenShot_ContextMenu.png)
-
-- Open *multiple*  files simultaneously with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage] directly from within Solution Explorer.
 
 - Warning if attempting to open a large quantity of files. The quantity is configurable in Tools | Options.
 
