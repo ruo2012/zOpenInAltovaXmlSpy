@@ -69,9 +69,9 @@ Contributions to this project are welcome by raising an [Issue][GitHubRepoIssues
 
 ## Legal
 
-The [owner](https://github.com/GregTrevellick) of this [GitHub repository / software](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) is not affiliated, associated, authorized, endorsed by, employed by, sponsored by, or in any way officially connected with [Altova][ThirdPartyAppHomePage] or any of its subsidiaries or its affiliates.
+The [owner](https://github.com/GregTrevellick) of this [GitHub repository / software][GitHubRepoURL] is not affiliated, associated, authorized, endorsed by, employed by, sponsored by, or in any way officially connected with [Altova][ThirdPartyAppHomePage] or any of its subsidiaries or its affiliates.
 
-Nor has [this](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) software been authorised, approved, verified or in anyway assessed by [Altova](https://www.altova.com/company.html), or any of its subsidiaries or its affiliates, either as [raw source code](https://github.com/GregTrevellick/OpenInAltovaXmlSpy) on [GitHub.com](https://github.com/) or as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy) in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
+Nor has [this][GitHubRepoURL] software been authorised, approved, verified or in anyway assessed by [Altova](https://www.altova.com/company.html), or any of its subsidiaries or its affiliates, either as [raw source code][GitHubRepoURL] on [GitHub.com](https://github.com/) or as a [Visual Studio Extension][VSMarketplaceUrl] in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
 
 All Trademark, intellectual property rights, and other rights belonging to [Altova][ThirdPartyAppHomePage] as described in [here](https://www.altova.com/legal.html) and [here](https://www.altova.com/eula.html) apply.
 
