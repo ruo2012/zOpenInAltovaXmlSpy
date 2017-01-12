@@ -16,7 +16,7 @@ namespace OpenInApp.Commands
         public static OpenInAppCommand Instance { get; private set; }
 
         private readonly Package _package;
-        private IServiceProvider ServiceProvider { get { return _package; } }
+        private IServiceProvider ServiceProvider => _package;
 
         public static void Initialize(Package package)
         {
@@ -29,7 +29,7 @@ namespace OpenInApp.Commands
 
             if (package == null)
             {
-                Logger.Log(new ArgumentNullException("package"));
+                Logger.Log(new ArgumentNullException(nameof(package)));
                 OpenInAppHelper.ShowUnexpectedError(Caption);
             }
             else

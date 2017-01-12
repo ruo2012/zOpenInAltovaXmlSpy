@@ -1,6 +1,6 @@
 ### Installed product versions
 - Visual Studio: [example 2015 Community]
-- This extension: [example 1.1.21]
+- This extension: [example 1.2.3]
 
 ### Description
 Replace this text with a short description

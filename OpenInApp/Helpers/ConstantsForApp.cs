@@ -6,13 +6,13 @@ namespace OpenInApp.Helpers
     public static class ConstantsForApp 
     {
         public const string AppFolderName = "Altova";
-        public const string AppSubFolderName = "XMLSpy";//null in most cases
+        public const string AppSubFolderName = "XMLSpy";
         public const string ExecutableFileToBrowseFor = "XmlSpy.exe";
         public static IEnumerable<string> GetDefaultTypicalFileExtensions()
         {
             return new List<string>
             {
-                //See also http://manual.altova.com/XMLSpy/spyprofessional/index.html?filetypes.htm
+                //Source(s) http://manual.altova.com/XMLSpy/spyprofessional/index.html?filetypes.htm
                 #region Extensions
                 "asp",
                 "biz",

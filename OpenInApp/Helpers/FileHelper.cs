@@ -26,8 +26,6 @@ namespace OpenInApp.Helpers
                 case DialogResult.No:
                     PersistVSToolOptions(originalPathToFile);
                     break;
-                default:
-                    break;
             }
         }
 
