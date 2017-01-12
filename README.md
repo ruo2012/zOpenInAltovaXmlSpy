@@ -15,7 +15,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/33e93co68kooud5r?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
 [![][VersionNumberBadgeURL]][VSMarketplaceUrl]
 
-Download this extension from the [VS Marketplace](VSMarketplaceUrl).
+Download this extension from the [VS Marketplace][VSMarketplaceUrl].
 
 ---------------------------------------
 
