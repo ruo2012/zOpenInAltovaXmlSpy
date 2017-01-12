@@ -12,7 +12,7 @@
 # Open In Altova XmlSpy
 
 [![Licence](https://img.shields.io/github/license/gittools/gitlink.svg)](/LICENSE.txt)
-[![Build status](https://ci.appveyor.com/api/projects/status/33e93co68kooud5r?svg=true)](https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy)
+[![Build status][AppVeyorProjectBuildStatusBadgeSvg]][AppVeyorProjectUrl]
 [![][VersionNumberBadgeURL]][VSMarketplaceUrl]
 
 Download this extension from the [VS Marketplace][VSMarketplaceUrl].
@@ -40,6 +40,8 @@ Similar "Open In" VS extensions can be found [here](https://marketplace.visualst
 ## Features
 
 ![](OpenInApp/Resources/ReadMeScreenShot_ContextMenu.png)
+
+- Works with VS2012, VS2013 and VS2015.
 
 - Warning if attempting to open a large quantity of files. The quantity is configurable in Tools | Options.
 
