@@ -21,7 +21,7 @@ Download this extension from the [VS Marketplace](VSMarketplaceUrl).
 
 <!--COPY START FOR VS GALLERY-->
 
-Open *multiple* files simultaneously with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage] directly from Solution Explorer.
+Open multiple files simultaneously in [Altova XMLSpy XML Editor][ThirdPartyAppHomePage] directly from Solution Explorer.
 
 [![][ThirdPartyAppOfficialLogo]][ThirdPartyAppHomePage]
 
