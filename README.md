@@ -44,11 +44,9 @@ Similar "Open In" VS extensions can be found [here](https://marketplace.visualst
 - Works with VS2012, VS2013 and VS2015.
 
 - Warning if attempting to open a large quantity of files. The quantity is configurable in Tools | Options.
-
 ![](OpenInApp/Resources/ReadMeScreenShot_WarningLargeQuantity.png)
 
 - Warning if attempting to open one or more file types whose extension is not typically associated with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage]. The list of typical file extensions is configurable in Tools | Options.
-
 ![](OpenInApp/Resources/ReadMeScreenShot_WarningNonTypical.png)
 
 - Option to supress the warning message if attempting to open a file whose extension is not typically associated with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage].
