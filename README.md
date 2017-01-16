@@ -40,7 +40,8 @@ Similar "Open In" VS extensions can be found [here](https://marketplace.visualst
 ## Features
 
 - Open multiple files simultaneously in [ThirdPartyApp][ThirdPartyAppHomePage] with VS2012, VS2013 and VS2015.
-![](OpenInApp/Resources/ReadMeScreenShot_ContextMenu.png)
+
+  ![](OpenInApp/Resources/ReadMeScreenShot_ContextMenu.png)
 
 - Warning if attempting to open a large quantity of files. The quantity is configurable in Tools | Options.
 ![](OpenInApp/Resources/ReadMeScreenShot_WarningLargeQuantity.png)
