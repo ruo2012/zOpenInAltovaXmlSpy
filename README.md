@@ -32,7 +32,7 @@ See the [change log](CHANGELOG.md) for road map and release history. Bugs can be
 
 ## Features
 
-- Open multiple files simultaneously in [ThirdPartyApp][ThirdPartyAppHomePage] with VS2012, VS2013 and VS2015.
+- Open multiple files simultaneously in [Altova XMLSpy XML Editor][ThirdPartyAppHomePage] with VS2012, VS2013 and VS2015.
 
   ![](OpenInApp/Resources/ReadMeScreenShot_ContextMenu.png)
 
