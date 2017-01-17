@@ -61,14 +61,6 @@ That said, there may be times when you wish to edit a file in an alternative edi
 
 <!--COPY END FOR VS GALLERY-->
 
-## Contribute
-
-Contributions to this project are welcome by raising an [Issue][GitHubRepoIssuesURL] or submitting a [Pull Request][GitHubRepoPullRequestsURL].
-
-## License
-
-[MIT](/LICENSE.txt)
-
 ## Legal
 
 The [owner](https://github.com/GregTrevellick) of this [GitHub repository / software][GitHubRepoURL] is not affiliated, associated, authorized, endorsed by, employed by, sponsored by, or in any way officially connected with [Altova][ThirdPartyAppHomePage] or any of its subsidiaries or its affiliates.
