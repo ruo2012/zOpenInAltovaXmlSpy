@@ -1,5 +1,6 @@
 [AppVeyorProjectUrl]: https://ci.appveyor.com/project/GregTrevellick/OpenInAltovaXmlSpy
 [AppVeyorProjectBuildStatusBadgeSvg]: https://ci.appveyor.com/api/projects/status/33e93co68kooud5r?svg=true
+[GitHubPagesURL]: https://gregtrevellick.github.io/OpenInAltovaXmlSpy/
 [GitHubRepoURL]: https://github.com/GregTrevellick/OpenInAltovaXmlSpy
 [GitHubRepoIssuesURL]: https://github.com/GregTrevellick/OpenInAltovaXmlSpy/issues
 [GitHubRepoPullRequestsURL]: https://github.com/GregTrevellick/OpenInAltovaXmlSpy/pulls
@@ -16,7 +17,7 @@
 [![Build status][AppVeyorProjectBuildStatusBadgeSvg]][AppVeyorProjectUrl]
 [![][VersionNumberBadgeURL]][VSMarketplaceUrl]
 
-Download this extension from the [VS Marketplace][VSMarketplaceUrl].
+This [Visual Studio][VisualStudioURL] extension is officially available at the [Visual Studio Marketplace][VSMarketplaceUrl].
 
 ---------------------------------------
 
@@ -24,11 +25,9 @@ Download this extension from the [VS Marketplace][VSMarketplaceUrl].
 
 Open multiple files simultaneously in [Altova XMLSpy XML Editor][ThirdPartyAppHomePage] directly from [Visual Studio's][VisualStudioURL] Solution Explorer.
 
-[![][ThirdPartyAppOfficialLogo]][ThirdPartyAppHomePage]
-
 If you like this ***free*** extension, please give it a [review][VSMarketplaceReviewsUrl].
 
-See the [change log](CHANGELOG.md) for road map and release history. Bugs can be logged [here][GitHubRepoIssuesURL].
+[![][ThirdPartyAppOfficialLogo]][ThirdPartyAppHomePage]
 
 ## Features
 
@@ -36,11 +35,11 @@ See the [change log](CHANGELOG.md) for road map and release history. Bugs can be
 
   ![](OpenInApp/Resources/ReadMeScreenShot_ContextMenu.png)
 
-- Warning if attempting to open a large quantity of files. The quantity is configurable in Tools | Options.
+- Warning if attempting to open a large quantity of files. The quantity is configurable in Tools > Options.
 
   ![](OpenInApp/Resources/ReadMeScreenShot_WarningLargeQuantity.png)
 
-- Warning if attempting to open one or more file types whose extension is not typically associated with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage]. The list of typical file extensions is configurable in Tools | Options.
+- Warning if attempting to open one or more file types whose extension is not typically associated with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage]. The list of typical file extensions is configurable in Tools > Options.
 
   ![](OpenInApp/Resources/ReadMeScreenShot_WarningNonTypical.png)
 
@@ -92,6 +91,16 @@ Additional thanks goes to [Build 2016 Conference](https://channel9.msdn.com/Even
 
 Thanks also to [Altova][ThirdPartyAppHomePage] themselves, who have additional IDE integration available [here](https://www.altova.com/ide_integration.html).
 
-[![](chart.png)][VSMarketplaceUrl]
+## Miscellaneous
+
+Contributions to this project are welcome by raising an [Issue][GitHubRepoIssuesURL] or submitting a [Pull Request][GitHubRepoPullRequestsURL].
+
+See the [change log](CHANGELOG.md) for road map and release history.
+
+Bugs can be logged [here][GitHubRepoIssuesURL].
+
+Software [Licence](/LICENSE.txt).
+
+[![](chart.png)][GitHubPagesURL]
 
 Similar "Open In" VS extensions can be found [here](https://marketplace.visualstudio.com/search?term=trevellick&target=VS&sortBy=Relevance).
