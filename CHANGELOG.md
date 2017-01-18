@@ -2,7 +2,7 @@
 
 These are the changes to each version that has been released on the official Visual Studio extension gallery.
 
-## 1.0.135
+## 1.0.137
 
 **2017-01-18** <!--21:00 UK / 21:00 UTC-->
 
