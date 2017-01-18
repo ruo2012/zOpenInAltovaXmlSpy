@@ -9,9 +9,9 @@ namespace OpenInApp
     {
         public const string Id = "AE643C9F-EA6E-4A88-A122-34696D103F82";
         public const string Name = "Open in Altova XMLSpy";
-        public const string Description = @"Open multiple files simultaneously with Altova XMLSpy XML Editor directly from Solution Explorer.";
+        public const string Description = @"Open multiple files simultaneously in Altova XMLSpy XML Editor directly from Solution Explorer.";
         public const string Language = "en-US";
-        public const string Version = "1.0.23";
+        public const string Version = "1.0.135";
         public const string Author = "GregTrevellick";
         public const string Tags = "xml, xmlspy, altova, xsd, xslt, open, open in";
     }
