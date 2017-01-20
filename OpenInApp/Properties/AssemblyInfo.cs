@@ -6,13 +6,13 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("OpenInApp")]
-[assembly: AssemblyDescription("Open file from solution explorer within Visual Studio")]
+[assembly: AssemblyDescription(Vsix.Description)]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Greg Trevellick")]
+[assembly: AssemblyCompany(Vsix.Author)]
 [assembly: AssemblyProduct("OpenInApp")]
-[assembly: AssemblyCopyright("Copyright © Greg Trevellick 2017")]
+[assembly: AssemblyCopyright(Vsix.Author)]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
+[assembly: AssemblyCulture(Vsix.Language)]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
