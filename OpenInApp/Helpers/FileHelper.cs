@@ -4,13 +4,15 @@ using System.Windows.Forms;
 
 namespace OpenInApp.Helpers
 {
-    public static class FileHelper
+    public class FileHelper
     {
-        public static void PromptForActualExeFile(string originalPathToFile)
+        public string Caption = Vsix.Name + " " + Vsix.Version;
+
+        public void PromptForActualExeFile(string originalPathToFile)
         {
             var box = MessageBox.Show(
                CommonConstants.PromptForActualExeFile(originalPathToFile),
-               OpenInAppCommand.Caption,
+               Caption,
                MessageBoxButtons.YesNo,
                MessageBoxIcon.Question);
 
@@ -29,7 +31,7 @@ namespace OpenInApp.Helpers
             }
         }
 
-        private static void PersistVSToolOptions(string fileName)
+        private void PersistVSToolOptions(string fileName)
         {
             VSPackage.Options.ActualPathToExe = fileName;
             VSPackage.Options.SaveSettingsToStorage();

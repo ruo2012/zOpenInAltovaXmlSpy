@@ -9,18 +9,22 @@ using System.Linq;
 
 namespace OpenInApp.Commands
 {
-    internal sealed class OpenInAppCommand 
+    internal sealed class OpenInAppCommand
     {
-        public static string Caption = Vsix.Name + " " + Vsix.Version;
-        public static readonly Guid CommandSet = new Guid(PackageGuids.guidOpenInVsCmdSetString);
-        public static OpenInAppCommand Instance { get; private set; }
+        private string Caption { get { return new FileHelper().Caption; } }
+        public readonly Guid CommandSet = new Guid(PackageGuids.guidOpenInVsCmdSetString);
+        public OpenInAppCommand Instance { get; private set; }
 
         private readonly Package _package;
         private IServiceProvider ServiceProvider => _package;
 
-        public static void Initialize(Package package)
+        public OpenInAppCommand()
         {
-            Instance = new OpenInAppCommand(package);            
+        }
+
+        public void Initialize(Package package)
+        {
+            Instance = new OpenInAppCommand(package);
         }
 
         private OpenInAppCommand(Package package)
@@ -58,7 +62,7 @@ namespace OpenInApp.Commands
                 if (!actualPathToExeExists)
                 {
                     proceedToExecute = false;
-                    FileHelper.PromptForActualExeFile(VSPackage.Options.ActualPathToExe);
+                    new FileHelper().PromptForActualExeFile(VSPackage.Options.ActualPathToExe);
                     var newActualPathToExeExists = CommonFileHelper.DoesFileExist(VSPackage.Options.ActualPathToExe);
                     if (newActualPathToExeExists)
                     {

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace OpenInApp.Helpers
 {
-    public static class ConstantsForApp 
+    public class ConstantsForApp 
     {
         public const string AppFolderName = "Altova";
         public const string AppSubFolderName = "XMLSpy";
         public const string ExecutableFileToBrowseFor = "XmlSpy.exe";
-        public static IEnumerable<string> GetDefaultTypicalFileExtensions()
+        public IEnumerable<string> GetDefaultTypicalFileExtensions()
         {
             return new List<string>
             {

@@ -9,6 +9,8 @@ namespace OpenInApp.Options
 {
     public class GeneralOptions : DialogPage
     {
+        private string Caption { get { return new FileHelper().Caption; } }
+
         [Category(CommonConstants.CategorySubLevel)]
         [DisplayName(ConstantsForApp.CommonActualPathToExeOptionLabel)]
         [Description(CommonConstants.ActualPathToExeOptionDetailedDescription)]
@@ -17,7 +19,25 @@ namespace OpenInApp.Options
         [Category(CommonConstants.CategorySubLevel)]
         [DisplayName(CommonConstants.TypicalFileExtensionsOptionLabel)]
         [Description(CommonConstants.TypicalFileExtensionsOptionDetailedDescription)]
-        public string TypicalFileExtensions { get; set; } = GetTypicalFileExtensions();
+        public string TypicalFileExtensions //{ get; set; } = GetTypicalFileExtensions();
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(typicalFileExtensions))
+                {
+                    var defaultTypicalFileExtensions = new ConstantsForApp().GetDefaultTypicalFileExtensions();
+                    return CommonFileHelper.GetDefaultTypicalFileExtensionsAsCsv(defaultTypicalFileExtensions);
+                }
+                else
+                {
+                    return typicalFileExtensions;
+                }
+            }
+            set
+            {
+                typicalFileExtensions = value;
+            }
+        }
 
         [Category(CommonConstants.CategorySubLevel)]
         [DisplayName(CommonConstants.SuppressTypicalFileExtensionsWarningOptionLabel)]
@@ -48,7 +68,7 @@ namespace OpenInApp.Options
                 {
                     MessageBox.Show(
                         CommonConstants.FileQuantityWarningLimitInvalid,
-                        OpenInAppCommand.Caption,
+                        Caption,
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
@@ -60,7 +80,8 @@ namespace OpenInApp.Options
         }
 
         private string fileQuantityWarningLimit;
-        
+        private string typicalFileExtensions;
+
         internal int FileQuantityWarningLimitInt
         {
             get
@@ -98,9 +119,9 @@ namespace OpenInApp.Options
             previousActualPathToExe = ActualPathToExe;
         }
 
-        private static string GetTypicalFileExtensions()
+        private string GetTypicalFileExtensions()
         {
-            return CommonFileHelper.GetDefaultTypicalFileExtensionsAsCsv(ConstantsForApp.GetDefaultTypicalFileExtensions());
+            return CommonFileHelper.GetDefaultTypicalFileExtensionsAsCsv(new ConstantsForApp().GetDefaultTypicalFileExtensions());
         }
 
         private string previousActualPathToExe { get; set; }
@@ -120,7 +141,7 @@ namespace OpenInApp.Options
                 if (!CommonFileHelper.DoesFileExist(ActualPathToExe))
                 {
                     e.ApplyBehavior = ApplyKind.Cancel;
-                    FileHelper.PromptForActualExeFile(ActualPathToExe);
+                    new FileHelper().PromptForActualExeFile(ActualPathToExe);
                 }
             }
 

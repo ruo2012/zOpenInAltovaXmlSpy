@@ -22,7 +22,7 @@ namespace OpenInApp
         {
             Options = (GeneralOptions)GetDialogPage(typeof(GeneralOptions));
 
-            OpenInAppCommand.Initialize(this);
+            new OpenInAppCommand().Initialize(this);
             base.Initialize();
         }
     }
