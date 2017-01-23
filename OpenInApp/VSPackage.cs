@@ -15,7 +15,7 @@ namespace OpenInApp
     [Guid(PackageGuids.guidOpenInAppPackageString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
     [ProvideOptionPage(typeof(GeneralOptions), Vsix.Name, CommonConstants.CategorySubLevel, 0, 0, true)]
-    public sealed class VSPackage : Package //, IVsInstalledProduct
+    public sealed class VSPackage : Package 
     {
         public static GeneralOptions Options { get; private set; }
 

@@ -3,10 +3,14 @@ using OpenInApp.Commands;
 using OpenInApp.Common.Helpers;
 using OpenInApp.Helpers;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace OpenInApp.Options
 {
+    //https://code.msdn.microsoft.com/VSSDK-IDE-Sample-Options-f152f574/sourcecode?fileId=18566&pathId=792238529
+    //OptionsPageGeneral .cs
+    //[Guid(GuidStrings.GuidPageGeneral)]
     public class GeneralOptions : DialogPage
     {
         private string Caption { get { return new FileHelper().Caption; } }
