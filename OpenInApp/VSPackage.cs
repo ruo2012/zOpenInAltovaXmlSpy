@@ -1,13 +1,12 @@
 ﻿using Microsoft.VisualStudio.Shell;
-//using Microsoft.VisualStudio.Shell.Interop;
-using OpenInApp.Commands;
 using OpenInApp.Common.Helpers;
-using OpenInApp.Options;
+using OpenInAppAltovaXmlSpy.Commands;
+using OpenInAppAltovaXmlSpy.Options.AltovaXmlSpy;
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
-namespace OpenInApp
+namespace OpenInAppAltovaXmlSpy
 {
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration(productName: "#110", productDetails: "#112", productId: Vsix.Version, IconResourceID = 400)]

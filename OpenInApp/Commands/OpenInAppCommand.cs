@@ -2,12 +2,12 @@
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
 using OpenInApp.Common.Helpers;
-using OpenInApp.Helpers;
+using OpenInAppAltovaXmlSpy.Helpers;
 using System;
 using System.ComponentModel.Design;
 using System.Linq;
 
-namespace OpenInApp.Commands
+namespace OpenInAppAltovaXmlSpy.Commands
 {
     internal sealed class OpenInAppCommand
     {

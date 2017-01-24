@@ -1,7 +1,7 @@
 ﻿using OpenInApp.Common.Helpers;
 using System.Collections.Generic;
 
-namespace OpenInApp.Helpers
+namespace OpenInAppAltovaXmlSpy.Helpers
 {
     public class ConstantsForApp 
     {

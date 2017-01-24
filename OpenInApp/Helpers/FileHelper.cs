@@ -1,8 +1,7 @@
-﻿using OpenInApp.Commands;
-using OpenInApp.Common.Helpers;
+﻿using OpenInApp.Common.Helpers;
 using System.Windows.Forms;
 
-namespace OpenInApp.Helpers
+namespace OpenInAppAltovaXmlSpy.Helpers
 {
     public class FileHelper
     {
