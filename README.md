@@ -33,19 +33,19 @@ If you like this ***free*** extension, please give it a [review][VSMarketplaceRe
 
 - Open multiple files simultaneously in [Altova XMLSpy XML Editor][ThirdPartyAppHomePage] with VS2012, VS2013 and VS2015.
 
-  ![](OpenInApp/Resources/ReadMeScreenShot_ContextMenu.png)
+  ![](src/Resources/ReadMeScreenShot_ContextMenu.png)
 
 - Warning if attempting to open a large quantity of files. The quantity is configurable in Tools > Options.
 
-  ![](OpenInApp/Resources/ReadMeScreenShot_WarningLargeQuantity.png)
+  ![](src/Resources/ReadMeScreenShot_WarningLargeQuantity.png)
 
 - Warning if attempting to open one or more file types whose extension is not typically associated with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage]. The list of typical file extensions is configurable in Tools > Options.
 
-  ![](OpenInApp/Resources/ReadMeScreenShot_WarningNonTypical.png)
+  ![](src/Resources/ReadMeScreenShot_WarningNonTypical.png)
 
 - Option to supress the warning message if attempting to open a file whose extension is not typically associated with [Altova XMLSpy XML Editor][ThirdPartyAppHomePage].
 
-  ![](OpenInApp/Resources/ReadMeScreenShot_OptionsGeneral.png)
+  ![](src/Resources/ReadMeScreenShot_OptionsGeneral.png)
 
 ## Use Cases
 
