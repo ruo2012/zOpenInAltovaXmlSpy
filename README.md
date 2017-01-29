@@ -5,11 +5,13 @@
 [GitHubRepoIssuesURL]: https://github.com/GregTrevellick/OpenInAltovaXmlSpy/issues
 [GitHubRepoPullRequestsURL]: https://github.com/GregTrevellick/OpenInAltovaXmlSpy/pulls
 [ThirdPartyAppHomePage]: http://www.altova.com/xml-editor/
-[ThirdPartyAppOfficialLogo]: ThirdPartyLogo.png <!--http://www.altova.com/images/linktoaltova/xmlspy.png-->
+[ThirdPartyAppOfficialLogo]: ThirdPartyLogo.png 
 [VersionNumberBadgeURL]: https://vsmarketplacebadge.apphb.com/version/GregTrevellick.OpenInAltovaXmlSpy.svg
 [VisualStudioURL]: https://www.visualstudio.com/
 [VSMarketplaceUrl]: https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy
 [VSMarketplaceReviewsUrl]: https://marketplace.visualstudio.com/items?itemName=GregTrevellick.OpenInAltovaXmlSpy#review-details
+
+<!--http://www.altova.com/images/linktoaltova/xmlspy.png-->
 
 # Open In Altova XmlSpy
 
